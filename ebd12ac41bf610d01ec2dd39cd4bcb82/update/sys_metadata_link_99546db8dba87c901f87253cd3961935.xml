@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c508a4d51bdca8101ec2dd39cd4bcb33</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_product">
+    <x_cgo_empower_work_work_order_product action="INSERT_OR_UPDATE">
+        <category display_value="VOIMALAITETUOTTEET">933800591bd8a8101ec2dd39cd4bcbfa</category>
+        <description> - Tasasähköjärjestelmän sähkösyötön riittävyyden tarkistus asennuksen yhteydessä myös sähkönousujohdon kannalta &#13;
+ - Tasasuuntaajayksikön asennus olevaan voimalaitejärjestelmään &#13;
+ - Tasasuuntaajayksikön toiminta-arvojen tarkistus ja säätö &#13;
+ - Tuote sisältää 1 moduulin lisäyksen tai vaihdon &#13;
+ - Jos järjestelmää muuten modernisoidaan, laskutetaan modernisoinnin osuus erikseen &#13;
+ - Poistettu moduuli käsitellään Tilaajan erillisen ohjeen mukaan&#13;
+ - Sähköpisteiden ja keskuskaavioiden punakynäpäivitykset (tuotantotilassa) &#13;
+ - Viranomaisten ja tilaajan edellyttämä sähkölaitteiden omantyöntarkastuspöytäkirja paperiversiona kohteeseen toimitettuna </description>
+        <name>Tasasuuntaajayksikön (moduulin) lisäys / vaihto</name>
+        <product_number>5104</product_number>
+        <sub_category/>
+        <sys_class_name>x_cgo_empower_work_work_order_product</sys_class_name>
+        <sys_created_by>aleksi.aaltonen@verco.fi</sys_created_by>
+        <sys_created_on>2020-11-04 13:43:42</sys_created_on>
+        <sys_id>c508a4d51bdca8101ec2dd39cd4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aleksi.aaltonen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-11-04 13:43:42</sys_updated_on>
+    </x_cgo_empower_work_work_order_product>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:17:06</sys_created_on>
+        <sys_id>99546db8dba87c901f87253cd3961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tasasuuntaajayksikön (moduulin) lisäys / vaihto</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_99546db8dba87c901f87253cd3961935</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:17:06</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_category</tablename>
+    </sys_metadata_link>
+</record_update>

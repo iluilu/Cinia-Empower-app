@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>24843f051b58a8101ec2dd39cd4bcb9d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_product">
+    <x_cgo_empower_work_work_order_product action="INSERT_OR_UPDATE">
+        <category display_value="TELEMATIIKKATUOTTEET">937c63851b18a8101ec2dd39cd4bcbe9</category>
+        <description>Irroitus:&#13;
+ - RT- ja LAKU pois käytöstä ilmoitus LO:lle (rataturvamääräysten mukaan), kaksi miestä paikalla&#13;
+ - Aseman sähkönsyöttö irti&#13;
+ - Anturien irrotus&#13;
+ - Pöllin lämmityspiiput ja scannerin sivusuojaraudat irroitus&#13;
+ - Mittapöllin aukon suojaaminen vanerilevyllä ratatyön ajaksi &#13;
+&#13;
+Asennus:&#13;
+ - Etäanturien takaisin asennus&#13;
+ - Suojalevyt takaisin asennus&#13;
+ - Etäantureiden kalibrointi, asema takaisin käyttöön &#13;
+ - Ensimmäisen junan avulla mittaikkunan tarkastus ja säätö sekä toiminnan varmistus telematiikan kanssa&#13;
+ - LAKU käytössä-ilmoitus LO:lle, RT-loppu&#13;
+ - Kameroiden kalibrointi tehdään erikseen tuntityönä (tarvittaessa)</description>
+        <name>LAKU-aseman laitteiden irrotus toppauksen tieltä ja takaisin asennus</name>
+        <product_number>2206</product_number>
+        <sub_category/>
+        <sys_class_name>x_cgo_empower_work_work_order_product</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-11-04 09:58:39</sys_created_on>
+        <sys_id>24843f051b58a8101ec2dd39cd4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:58:39</sys_updated_on>
+    </x_cgo_empower_work_work_order_product>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:19:50</sys_created_on>
+        <sys_id>45f4e13cdba87c901f87253cd396190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LAKU-aseman laitteiden irrotus toppauksen tieltä ja takaisin asennus</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_45f4e13cdba87c901f87253cd396190e</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:19:50</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_product</tablename>
+    </sys_metadata_link>
+</record_update>

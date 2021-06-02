@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>445748d51bd8a8101ec2dd39cd4bcba5</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_product">
+    <x_cgo_empower_work_work_order_product action="INSERT_OR_UPDATE">
+        <category display_value="MAANRAKENNUS">6f6f27891b18a8101ec2dd39cd4bcb85</category>
+        <description>Käsittää kaivun katuluokituksen (InfraRYL 2012) mukaisilla liikenneväylillä.</description>
+        <name>Kaivu katuluokka 1 ja 2 </name>
+        <product_number>1101</product_number>
+        <sub_category display_value="KAAPELIKAIVANNOT">068fafc91b18a8101ec2dd39cd4bcb8f</sub_category>
+        <sys_class_name>x_cgo_empower_work_work_order_product</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-11-04 11:21:15</sys_created_on>
+        <sys_id>445748d51bd8a8101ec2dd39cd4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-11-04 11:21:15</sys_updated_on>
+    </x_cgo_empower_work_work_order_product>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:16:49</sys_created_on>
+        <sys_id>b84469b8dba87c901f87253cd3961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Kaivu katuluokka 1 ja 2 </sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_b84469b8dba87c901f87253cd3961940</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:16:49</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_category</tablename>
+    </sys_metadata_link>
+</record_update>

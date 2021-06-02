@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>8bdfefdf1bd4a4101ec2dd39cd4bcb70</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_price">
+    <x_cgo_empower_work_price action="INSERT_OR_UPDATE">
+        <area>SA5</area>
+        <display_value>2406 -  Kytkentätyö valmiskaapelilla, (kuitu-, ko- ja CAT-kytkentäkaapelit; 1.kytkentä, kumpikin siirtosuunta) (SA5/ HR1)</display_value>
+        <postal_code/>
+        <price_group>HR1</price_group>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-11 09:24:40</sys_created_on>
+        <sys_id>8bdfefdf1bd4a4101ec2dd39cd4bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-11 09:24:40</sys_updated_on>
+        <unit>kpl</unit>
+        <unit_price>26.25</unit_price>
+        <work_order_product display_value="Kytkentätyö valmiskaapelilla, (kuitu-, ko- ja CAT-kytkentäkaapelit; 1.kytkentä, kumpikin siirtosuunta)">28843f051b58a8101ec2dd39cd4bcba5</work_order_product>
+    </x_cgo_empower_work_price>
+    <fx_price action="delete_multiple" query="id=8bdfefdf1bd4a4101ec2dd39cd4bcb70"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>26.25</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>unit_price</field>
+        <id>8bdfefdf1bd4a4101ec2dd39cd4bcb70</id>
+        <parent/>
+        <reference_amount>26.25</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-11 09:24:40</sys_created_on>
+        <sys_id>cfdfefdf1bd4a4101ec2dd39cd4bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-11 09:24:40</sys_updated_on>
+        <table>x_cgo_empower_work_price</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:10:17</sys_created_on>
+        <sys_id>1dc2e934dba87c901f87253cd39619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2406 -  Kytkentätyö valmiskaapelilla, (kuitu-, ko- ja CAT-kytkentäkaapelit; 1.kytkentä, kumpikin siirtosuunta) (SA5/ HR1)</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_1dc2e934dba87c901f87253cd39619bd</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:10:17</sys_updated_on>
+        <tablename>x_cgo_empower_work_price</tablename>
+    </sys_metadata_link>
+</record_update>

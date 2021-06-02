@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>933800591bd8a8101ec2dd39cd4bcbfa</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_category">
+    <x_cgo_empower_work_work_order_category action="INSERT_OR_UPDATE">
+        <category/>
+        <description>Kaikkiin tuotteisiin sisältyy seuraavat:&#13;
+Työssä noudatetaan voimassa olevia sähköturvallisuusmääräyksiä sekä sähkötyöturvallisuus- ja työsuojeluohjeita&#13;
+Asennusilmoitus, excel -pohjainen lomake jossa selvitys asennetusta laitteesta &#13;
+Tasasähkölaitteiden loppupiirustuksien päivitys (punakynäkorjaukset tuotantotilassa oleviin dokumentteihin) &#13;
+Laitteiden sijoituspiirustuksen punakynäpäivitys paikan päällä, sekä toimitettuna tilaajalle&#13;
+&#13;
+Tilaaja ilmoittaa tilauksen yhteydessä seuraavat lähtötiedot:&#13;
+Toivotun aikataulun (toimitusaika 4 viikkoa, ellei tilauksessa toisin sovita) &#13;
+Tiedot tehontarpeesta ja varakäyttöajasta sekä tieto tarvittavista osakuormanpudotusportaista. &#13;
+Laitesijoituskuva &#13;
+Kulkuohje &#13;
+&#13;
+Erikseen veloitettavia töitä/materiaaleja (työ sovittava etukäteen tilaajan kanssa): &#13;
+Akustokaapelit&#13;
+Asennettaessa tasasuuntaajajärjestelmä toiseen paikkaan ja asennuspaikan kohdalla on muita sähköasennuksia kuten pistorasia yms., asennusten siirto olevilla komponenteilla tai purku.&#13;
+Normaalityöajan ulkopuolella tehtävät yliheitot &#13;
+Uusiokäyttöön tarkoitettujen purettujen tasasuuntaajajärjestelmien tai moduulien varastointi. &#13;
+Vaihdettavien johdonsuoja-automaattien tai sulakkeiden materiaalikustannukset &#13;
+Mahdolliset uudet voimalaitedokumentit ja siihen liittyvät suunnittelukäynnit tuotantotiloissa. &#13;
+Isot ( &gt; 24kW ) tasasuuntaajajärjestelmät hinnoitellaan tapauskohtaisesti&#13;
+Telelaitteiden ryhmäjohtojen purku ja romutus (tasasuuntaajajärjestelmän purkujen yhteydessä)&#13;
+Tasasuuntaajajärjestelmän (ja moduulien) toimittaminen uusiokäyttövarastoon&#13;
+Akustojen romutuskustannukset (jos niistä on erillisiä vastaanottokuluja). Alihankinta tositteet toimitettava laskun liitteenä&#13;
+Matkustaminen laskutetaan käytössä olevilla matkatuotteilla</description>
+        <name>VOIMALAITETUOTTEET</name>
+        <product_number>5100</product_number>
+        <sys_class_name>x_cgo_empower_work_work_order_category</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-11-04 11:25:34</sys_created_on>
+        <sys_id>933800591bd8a8101ec2dd39cd4bcbfa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>aleksi.aaltonen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-11-05 08:25:25</sys_updated_on>
+    </x_cgo_empower_work_work_order_category>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:17:00</sys_created_on>
+        <sys_id>ff442db8dba87c901f87253cd3961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VOIMALAITETUOTTEET</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_ff442db8dba87c901f87253cd3961908</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:17:00</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_category</tablename>
+    </sys_metadata_link>
+</record_update>

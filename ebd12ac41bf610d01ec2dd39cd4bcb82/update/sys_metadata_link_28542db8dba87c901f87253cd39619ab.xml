@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ac843f051b58a8101ec2dd39cd4bcbb1</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_product">
+    <x_cgo_empower_work_work_order_product action="INSERT_OR_UPDATE">
+        <category display_value="TELEMATIIKKATUOTTEET">937c63851b18a8101ec2dd39cd4bcbe9</category>
+        <description> - Kotelon irroitus ja takaisin asennus&#13;
+ - 48 V sähkönsyötön irroitus ja takaisin asennus&#13;
+ - Hälytyslinjan irroitus ja takaisin asennus&#13;
+ - RJ-45  irroitus ja takaisin asennus</description>
+        <name>Alarmnet purku ja takaisin asennus</name>
+        <product_number>2205</product_number>
+        <sub_category/>
+        <sys_class_name>x_cgo_empower_work_work_order_product</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-11-04 09:58:39</sys_created_on>
+        <sys_id>ac843f051b58a8101ec2dd39cd4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-11-04 09:58:39</sys_updated_on>
+    </x_cgo_empower_work_work_order_product>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:17:04</sys_created_on>
+        <sys_id>28542db8dba87c901f87253cd39619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Alarmnet purku ja takaisin asennus</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_28542db8dba87c901f87253cd39619ab</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:17:04</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_category</tablename>
+    </sys_metadata_link>
+</record_update>

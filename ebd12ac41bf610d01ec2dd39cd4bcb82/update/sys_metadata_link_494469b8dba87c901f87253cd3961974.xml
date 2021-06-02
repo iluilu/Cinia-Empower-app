@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>47b218291b942c101ec2dd39cd4bcb16</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_product">
+    <x_cgo_empower_work_work_order_product action="INSERT_OR_UPDATE">
+        <category display_value="VOIMALAITETUOTTEET">933800591bd8a8101ec2dd39cd4bcbfa</category>
+        <description> - Sama kuin tuotteen "Suljetun akuston purkaminen (&lt; 100 Ah)" tuotekuvaus</description>
+        <name>Suljetun akuston purkaminen ( &gt; 100 - ≤ 400 Ah)</name>
+        <product_number>5115</product_number>
+        <sub_category/>
+        <sys_class_name>x_cgo_empower_work_work_order_product</sys_class_name>
+        <sys_created_by>aleksi.aaltonen@verco.fi</sys_created_by>
+        <sys_created_on>2020-11-05 06:49:11</sys_created_on>
+        <sys_id>47b218291b942c101ec2dd39cd4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aleksi.aaltonen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-11-05 06:49:11</sys_updated_on>
+    </x_cgo_empower_work_work_order_product>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:16:49</sys_created_on>
+        <sys_id>494469b8dba87c901f87253cd3961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Suljetun akuston purkaminen ( &gt; 100 - ≤ 400 Ah)</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_494469b8dba87c901f87253cd3961974</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:16:49</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_category</tablename>
+    </sys_metadata_link>
+</record_update>

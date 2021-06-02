@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0fdfefdf1bd4a4101ec2dd39cd4bcb7d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_price">
+    <x_cgo_empower_work_price action="INSERT_OR_UPDATE">
+        <area>SA5</area>
+        <display_value>2701 -  Yhteyden mittaus, 2M- (ja alle olevat) (SA5/ HR1)</display_value>
+        <postal_code/>
+        <price_group>HR1</price_group>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-11 09:24:40</sys_created_on>
+        <sys_id>0fdfefdf1bd4a4101ec2dd39cd4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-11 09:24:40</sys_updated_on>
+        <unit>kpl</unit>
+        <unit_price>71.4</unit_price>
+        <work_order_product display_value="Yhteyden mittaus, 2M- (ja alle olevat)">6c843f051b58a8101ec2dd39cd4bcbaf</work_order_product>
+    </x_cgo_empower_work_price>
+    <fx_price action="delete_multiple" query="id=0fdfefdf1bd4a4101ec2dd39cd4bcb7d"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>71.4</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>unit_price</field>
+        <id>0fdfefdf1bd4a4101ec2dd39cd4bcb7d</id>
+        <parent/>
+        <reference_amount>71.4</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-11 09:24:40</sys_created_on>
+        <sys_id>43dfefdf1bd4a4101ec2dd39cd4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-11 09:24:40</sys_updated_on>
+        <table>x_cgo_empower_work_price</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:09:14</sys_created_on>
+        <sys_id>ca82a9f0dba87c901f87253cd39619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2701 -  Yhteyden mittaus, 2M- (ja alle olevat) (SA5/ HR1)</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_ca82a9f0dba87c901f87253cd39619b7</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:09:14</sys_updated_on>
+        <tablename>x_cgo_empower_work_price</tablename>
+    </sys_metadata_link>
+</record_update>

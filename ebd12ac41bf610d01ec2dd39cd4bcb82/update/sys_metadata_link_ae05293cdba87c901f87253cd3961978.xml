@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>efb085251bd024104c78dc6fbd4bcb59</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_product">
+    <x_cgo_empower_work_work_order_product action="INSERT_OR_UPDATE">
+        <category display_value="MAAKAAPELOINTI">de4ef8ed1b9024104c78dc6fbd4bcb75</category>
+        <description>Käsittää kooltaan 500 – 1500 mm x Ø 1 000 – 1 500 mm betonisen kaapelikaivon sekä halkaisijaltaan 800 mm kansikorotuksen (kaulus) ja kansielementin asennuksen sekä kuusi (6) läpivientireikää.</description>
+        <name>Betonikaivon asennus (HKR)</name>
+        <product_number>1316</product_number>
+        <sub_category display_value="KAAPELIKAIVOT">61aeb0a11bd024104c78dc6fbd4bcba9</sub_category>
+        <sys_class_name>x_cgo_empower_work_work_order_product</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-05 10:10:13</sys_created_on>
+        <sys_id>efb085251bd024104c78dc6fbd4bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-05 10:10:13</sys_updated_on>
+    </x_cgo_empower_work_work_order_product>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:20:12</sys_created_on>
+        <sys_id>ae05293cdba87c901f87253cd3961978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Betonikaivon asennus (HKR)</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_ae05293cdba87c901f87253cd3961978</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:20:12</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_product</tablename>
+    </sys_metadata_link>
+</record_update>

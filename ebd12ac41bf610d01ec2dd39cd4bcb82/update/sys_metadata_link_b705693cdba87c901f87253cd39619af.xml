@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>936d9d691b5424104c78dc6fbd4bcb63</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_product">
+    <x_cgo_empower_work_work_order_product action="INSERT_OR_UPDATE">
+        <category display_value="TELETEKNISET TYÖT">4b8815251b5424104c78dc6fbd4bcb13</category>
+        <description>Käsittää erikseen tilattavan kytkentäpisteen kuituyhteyden mittauksen (13 - n).</description>
+        <name>Valokaapeliyhteyden mittaus (seuraavat kuidut) </name>
+        <product_number>1506</product_number>
+        <sub_category display_value="VALOKAAPELIYHTEYDEN MITTAUKSET">bce895251b5424104c78dc6fbd4bcb58</sub_category>
+        <sys_class_name>x_cgo_empower_work_work_order_product</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-05 12:15:33</sys_created_on>
+        <sys_id>936d9d691b5424104c78dc6fbd4bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-05 12:15:33</sys_updated_on>
+    </x_cgo_empower_work_work_order_product>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:20:18</sys_created_on>
+        <sys_id>b705693cdba87c901f87253cd39619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Valokaapeliyhteyden mittaus (seuraavat kuidut) </sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_b705693cdba87c901f87253cd39619af</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:20:18</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_product</tablename>
+    </sys_metadata_link>
+</record_update>

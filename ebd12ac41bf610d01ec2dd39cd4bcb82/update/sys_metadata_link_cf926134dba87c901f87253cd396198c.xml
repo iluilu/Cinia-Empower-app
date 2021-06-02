@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>46af6bdf1bd4a4101ec2dd39cd4bcbab</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_price">
+    <x_cgo_empower_work_price action="INSERT_OR_UPDATE">
+        <area>SA4</area>
+        <display_value>2201 -  Palo- tai murtokeskuksen vaihtaminen (SA4/ HR1)</display_value>
+        <postal_code/>
+        <price_group>HR1</price_group>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-11 09:23:47</sys_created_on>
+        <sys_id>46af6bdf1bd4a4101ec2dd39cd4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-11 09:23:47</sys_updated_on>
+        <unit>kpl</unit>
+        <unit_price>1304.42</unit_price>
+        <work_order_product display_value="Palo- tai murtokeskuksen vaihtaminen">64843f051b58a8101ec2dd39cd4bcb94</work_order_product>
+    </x_cgo_empower_work_price>
+    <fx_price action="delete_multiple" query="id=46af6bdf1bd4a4101ec2dd39cd4bcbab"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>1304.42</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>unit_price</field>
+        <id>46af6bdf1bd4a4101ec2dd39cd4bcbab</id>
+        <parent/>
+        <reference_amount>1304.42</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-11 09:23:47</sys_created_on>
+        <sys_id>8aaf6bdf1bd4a4101ec2dd39cd4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-11 09:23:47</sys_updated_on>
+        <table>x_cgo_empower_work_price</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:09:35</sys_created_on>
+        <sys_id>cf926134dba87c901f87253cd396198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2201 -  Palo- tai murtokeskuksen vaihtaminen (SA4/ HR1)</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_cf926134dba87c901f87253cd396198c</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:09:35</sys_updated_on>
+        <tablename>x_cgo_empower_work_price</tablename>
+    </sys_metadata_link>
+</record_update>

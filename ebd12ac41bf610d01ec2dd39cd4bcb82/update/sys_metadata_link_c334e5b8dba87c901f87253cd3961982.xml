@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0ae6b0a51b9024104c78dc6fbd4bcbb7</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_cgo_empower_work_work_order_category">
+    <x_cgo_empower_work_work_order_category action="INSERT_OR_UPDATE">
+        <category display_value="MAANRAKENNUS">6f6f27891b18a8101ec2dd39cd4bcb85</category>
+        <description>Työ käsittää betoni- tai kivimateriaalin lävistyksen timanttiporaamalla sekä kaapelin ja putken asennuksen ja tiivistyksen porattuun reikään / putkeen.</description>
+        <name>LÄPIVIENNIT</name>
+        <product_number/>
+        <sys_class_name>x_cgo_empower_work_work_order_category</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-05 09:27:15</sys_created_on>
+        <sys_id>0ae6b0a51b9024104c78dc6fbd4bcbb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-05 09:27:15</sys_updated_on>
+    </x_cgo_empower_work_work_order_category>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2021-06-02 11:16:42</sys_created_on>
+        <sys_id>c334e5b8dba87c901f87253cd3961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LÄPIVIENNIT</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_metadata_link_c334e5b8dba87c901f87253cd3961982</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-06-02 11:16:42</sys_updated_on>
+        <tablename>x_cgo_empower_work_work_order_category</tablename>
+    </sys_metadata_link>
+</record_update>
