@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>invoicing_contact</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Put invoicing email in place</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   if(newValue){
+      var email = g_form.getReference('invoicing_contact', nouto);
+	}
+   function nouto(email){
+         g_form.setValue('invoicing_additional_info', email.email);
+   }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+        <sys_created_on>2020-10-09 08:47:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9869a97c1bfbd4101ec2dd39cd4bcbb8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Put invoicing email in place</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_script_client_9869a97c1bfbd4101ec2dd39cd4bcbb8</sys_update_name>
+        <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-10-09 08:51:48</sys_updated_on>
+        <table>x_cgo_empower_work_work_order</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

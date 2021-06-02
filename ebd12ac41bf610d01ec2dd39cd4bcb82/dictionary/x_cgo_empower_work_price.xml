@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Price" max_length="40" name="x_cgo_empower_work_price" sizeclass="1921" type="collection">
+        <element choice="1" label="Area" max_length="40" name="area" type="string">
+            <choice>
+                <element inactive_on_update="false" label="SA1 Etelä" sequence="1" value="SA1"/>
+                <element inactive_on_update="false" label="SA2 Itä" sequence="2" value="SA2"/>
+                <element inactive_on_update="false" label="SA3 Keski" sequence="3" value="SA3"/>
+                <element inactive_on_update="false" label="SA4 Pohjoinen" sequence="4" value="SA4"/>
+                <element inactive_on_update="false" label="SA5 Länsi" sequence="5" value="SA5"/>
+            </choice>
+        </element>
+        <element display="true" label="Display value" max_length="200" name="display_value" read_only="true" type="string"/>
+        <element label="Postal code" max_length="40" name="postal_code" type="string"/>
+        <element choice="1" label="Price group" max_length="40" name="price_group" type="string">
+            <choice>
+                <element inactive_on_update="false" label="HR1 (merkityt kaupungit)" sequence="1" value="HR1"/>
+                <element inactive_on_update="false" label="HR2 (Taajaman ulkopuoli)" sequence="2" value="HR2"/>
+                <element inactive_on_update="false" label="HR3 (Reuna-alue)" sequence="3" value="HR3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Unit" max_length="40" name="unit" type="string">
+            <choice>
+                <element inactive_on_update="false" label="cm" sequence="1" value="cm"/>
+                <element inactive_on_update="false" label="m" sequence="2" value="m"/>
+                <element inactive_on_update="false" label="m2" sequence="3" value="m2"/>
+                <element inactive_on_update="false" label="m3" sequence="4" value="m3"/>
+                <element inactive_on_update="false" label="kpl" sequence="5" value="kpl"/>
+                <element inactive_on_update="false" label="15min" sequence="6" value="15min"/>
+                <element inactive_on_update="false" label="h" sequence="7" value="h"/>
+                <element inactive_on_update="false" label="om" sequence="8" value="om"/>
+                <element inactive_on_update="false" label="pm" sequence="9" value="pm"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Unit price" max_length="20" name="unit_price" type="price"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Work order product" max_length="32" name="work_order_product" reference="x_cgo_empower_work_work_order_product" type="reference"/>
+        <index name="index">
+            <element name="work_order_product"/>
+        </index>
+    </element>
+</database>

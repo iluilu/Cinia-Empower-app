@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="prices_import_01" max_length="40" name="x_cgo_empower_work_prices_import_01" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=HR1" label="HR1" max_length="40" name="u_hr1" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=HR2" label="HR2" max_length="40" name="u_hr2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="HR3" max_length="40" name="u_hr3" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sopimusalue" label="Sopimusalue" max_length="40" name="u_sopimusalue" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tuotenumero" label="Tuotenumero" max_length="40" name="u_tuotenumero" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Työtuotteet" max_length="40" name="u_työtuotteet" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Yksikkö" max_length="40" name="u_yksikkö" type="string"/>
+    </element>
+</database>

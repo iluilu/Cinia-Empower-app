@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="billed_amount" label="Billed amount" language="en" table="x_cgo_empower_work_m2m_construction_sites_products">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>billed_amount</element>
+            <help/>
+            <hint/>
+            <label>Billed amount</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_m2m_construction_sites_products</name>
+            <plural>Billed amounts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-03-22 12:19:38</sys_created_on>
+            <sys_id>8b2087251b8b60901ec2dd39cd4bcbf0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Billed amount</sys_name>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_documentation_x_cgo_empower_work_m2m_construction_sites_products_billed_amount_en</sys_update_name>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-03-22 12:19:38</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

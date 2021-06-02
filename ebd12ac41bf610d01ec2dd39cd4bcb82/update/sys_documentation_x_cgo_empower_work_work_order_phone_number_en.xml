@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="phone_number" label="Phone number" language="en" table="x_cgo_empower_work_work_order">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>phone_number</element>
+            <help/>
+            <hint/>
+            <label>Phone number</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_work_order</name>
+            <plural>Phone numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-18 13:03:51</sys_created_on>
+            <sys_id>78e2f60c1b3a10d01ec2dd39cd4bcbaa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Phone number</sys_name>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_documentation_x_cgo_empower_work_work_order_phone_number_en</sys_update_name>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-18 13:03:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

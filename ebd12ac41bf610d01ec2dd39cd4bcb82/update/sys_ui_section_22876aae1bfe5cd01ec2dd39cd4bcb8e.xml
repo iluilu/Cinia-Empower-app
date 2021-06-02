@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="22876aae1bfe5cd01ec2dd39cd4bcb8e" sys_domain="global" table="x_cgo_empower_work_m2m_construction_sites_products" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>construction_site</element>
+            <position>0</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>32283abadbdc30901f87253cd39619f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>price</element>
+            <position>1</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>b6283abadbdc30901f87253cd39619f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_price</element>
+            <position>2</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>3e283abadbdc30901f87253cd39619f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>b2283abadbdc30901f87253cd39619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>amount</element>
+            <position>4</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>3a283abadbdc30901f87253cd39619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>billed_amount</element>
+            <position>5</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>be283abadbdc30901f87253cd39619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>task</element>
+            <position>6</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>36283abadbdc30901f87253cd39619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>ba283abadbdc30901f87253cd39619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>item_notes</element>
+            <position>8</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-05-27 12:15:33</sys_created_on>
+            <sys_id>32283abadbdc30901f87253cd39619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_m2m_construction_sites_products" sys_domain="global" view="Default view">22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-05-27 12:15:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_cgo_empower_work_m2m_construction_sites_products</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-26 06:39:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_cgo_empower_work_m2m_construction_sites_products</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_ui_section_22876aae1bfe5cd01ec2dd39cd4bcb8e</sys_update_name>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-26 06:39:04</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

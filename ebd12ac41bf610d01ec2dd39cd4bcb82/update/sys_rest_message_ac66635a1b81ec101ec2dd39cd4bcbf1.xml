@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>https://integrationtest.empower.eu:4443/CiniaRESTService&#13;
+https://193.143.100.23:4443/CiniaRESTService</description>
+        <name>Empower work order</name>
+        <oauth2_profile/>
+        <protocol_name display_value="enersense">36b4cc031bde20501ec2dd39cd4bcbb9</protocol_name>
+        <rest_endpoint>https://integrationtest.empower.eu:4443/CiniaRESTService</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-12-15 12:56:26</sys_created_on>
+        <sys_id>ac66635a1b81ec101ec2dd39cd4bcbf1</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Empower work order</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_rest_message_ac66635a1b81ec101ec2dd39cd4bcbf1</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2021-02-18 07:22:12</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

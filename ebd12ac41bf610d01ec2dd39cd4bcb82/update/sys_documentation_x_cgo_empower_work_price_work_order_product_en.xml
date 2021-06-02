@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="work_order_product" label="Work order product" language="en" table="x_cgo_empower_work_price">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>work_order_product</element>
+            <help/>
+            <hint/>
+            <label>Work order product</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <plural>Work order products</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 07:01:33</sys_created_on>
+            <sys_id>6b89ee541bba50d01ec2dd39cd4bcb38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Work order product</sys_name>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_documentation_x_cgo_empower_work_price_work_order_product_en</sys_update_name>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 07:01:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

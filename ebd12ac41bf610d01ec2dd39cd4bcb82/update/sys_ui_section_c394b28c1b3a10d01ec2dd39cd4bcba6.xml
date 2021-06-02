@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Ordered by" section_id="c394b28c1b3a10d01ec2dd39cd4bcba6" sys_domain="global" table="x_cgo_empower_work_work_order" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-10-09 08:12:09</sys_created_on>
+            <sys_id>cfc2ed741bfbd4101ec2dd39cd4bcbfe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ordered by" display_value="Ordered by" name="x_cgo_empower_work_work_order" sys_domain="global" view="Default view">c394b28c1b3a10d01ec2dd39cd4bcba6</sys_ui_section>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-10-09 08:12:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_person</element>
+            <position>1</position>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-10-09 08:12:09</sys_created_on>
+            <sys_id>47c2ed741bfbd4101ec2dd39cd4bcbff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ordered by" display_value="Ordered by" name="x_cgo_empower_work_work_order" sys_domain="global" view="Default view">c394b28c1b3a10d01ec2dd39cd4bcba6</sys_ui_section>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-10-09 08:12:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoicing_contact</element>
+            <position>2</position>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-10-09 08:12:09</sys_created_on>
+            <sys_id>cbc2ed741bfbd4101ec2dd39cd4bcbff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ordered by" display_value="Ordered by" name="x_cgo_empower_work_work_order" sys_domain="global" view="Default view">c394b28c1b3a10d01ec2dd39cd4bcba6</sys_ui_section>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-10-09 08:12:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-10-09 08:12:09</sys_created_on>
+            <sys_id>43c221b41bfbd4101ec2dd39cd4bcb00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ordered by" display_value="Ordered by" name="x_cgo_empower_work_work_order" sys_domain="global" view="Default view">c394b28c1b3a10d01ec2dd39cd4bcba6</sys_ui_section>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-10-09 08:12:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>task</element>
+            <position>4</position>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-10-09 08:12:09</sys_created_on>
+            <sys_id>c7c221b41bfbd4101ec2dd39cd4bcb00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ordered by" display_value="Ordered by" name="x_cgo_empower_work_work_order" sys_domain="global" view="Default view">c394b28c1b3a10d01ec2dd39cd4bcba6</sys_ui_section>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-10-09 08:12:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>5</position>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-10-09 08:12:09</sys_created_on>
+            <sys_id>4fc221b41bfbd4101ec2dd39cd4bcb00</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ordered by" display_value="Ordered by" name="x_cgo_empower_work_work_order" sys_domain="global" view="Default view">c394b28c1b3a10d01ec2dd39cd4bcba6</sys_ui_section>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-10-09 08:12:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoicing_additional_info</element>
+            <position>6</position>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-10-09 08:12:09</sys_created_on>
+            <sys_id>c3c221b41bfbd4101ec2dd39cd4bcb01</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Ordered by" display_value="Ordered by" name="x_cgo_empower_work_work_order" sys_domain="global" view="Default view">c394b28c1b3a10d01ec2dd39cd4bcba6</sys_ui_section>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-10-09 08:12:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Ordered by</caption>
+            <header>false</header>
+            <name>x_cgo_empower_work_work_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-18 13:11:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c394b28c1b3a10d01ec2dd39cd4bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_cgo_empower_work_work_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_ui_section_c394b28c1b3a10d01ec2dd39cd4bcba6</sys_update_name>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-18 13:11:22</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

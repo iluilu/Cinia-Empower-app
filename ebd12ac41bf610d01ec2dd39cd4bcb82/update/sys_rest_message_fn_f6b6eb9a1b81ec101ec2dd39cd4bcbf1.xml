@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&#13;
+&lt;Messaging&gt;&#13;
+    &lt;MessageID&gt;${MessageID}&lt;/MessageID&gt;&#13;
+    &lt;Order&gt;&#13;
+        &lt;ProfileID&gt;${Order.ProfileID}&lt;/ProfileID&gt;&#13;
+        &lt;ID&gt;${Order.ID}&lt;/ID&gt;&#13;
+&lt;ProjectId&gt;${Order.ProjectId}&lt;/ProjectId&gt;&#13;
+&lt;CostCenterNumber&gt;${Order.CostCenterNumber}&lt;/CostCenterNumber&gt;&#13;
+&lt;ID&gt;${Order.ID}&lt;/ID&gt;&#13;
+        &lt;IssueDateTime&gt;${Order.IssueDateTime}&lt;/IssueDateTime&gt;&#13;
+        &lt;Note&gt;${Order.Note}&lt;/Note&gt;&#13;
+        &lt;OrderReference&gt;${Order.OrderReference}&lt;/OrderReference&gt;&#13;
+        &lt;BillingReference&gt;${Order.BillingReference}&lt;/BillingReference&gt;&#13;
+        &lt;WorkingArea&gt;${Order.WorkingArea}&lt;/WorkingArea&gt;&#13;
+        &lt;Urgent&gt;${Order.Urgent}1&lt;/Urgent&gt;&#13;
+        &lt;DocumentReferences&gt;${Order.DocumentReferences}&lt;/DocumentReferences&gt;&#13;
+&lt;WorkType&gt;${Order.WorkType}&lt;/WorkType&gt;        &#13;
+&lt;Status&gt;${Order.Status}&lt;/Status&gt;&#13;
+        &lt;Persons&gt;${Order.Persons}&lt;/Persons&gt;&#13;
+        &lt;Duration&gt;${Order.Duration}&lt;/Duration&gt;&#13;
+        &lt;ResourceAddInfo&gt;${Order.ResourceAddInfo}&lt;/ResourceAddInfo&gt;&#13;
+        &lt;Skills&gt;${Order.Skills}&lt;/Skills&gt;&#13;
+        &lt;SkillsOther&gt;${Order.SkillsOther}&lt;/SkillsOther&gt;&#13;
+        &lt;OrdererParty&gt;&#13;
+            &lt;ID&gt;${Order.OrdererParty.ID}&lt;/ID&gt;&#13;
+            &lt;Contact&gt;&#13;
+                &lt;ID&gt;${Order.OrdererParty.Contact.ID}&lt;/ID&gt;&#13;
+                &lt;Name&gt;${Order.OrdererParty.Contact.Name}&lt;/Name&gt;&#13;
+                &lt;Telephone&gt;${Order.OrdererParty.Contact.Telephone}&lt;/Telephone&gt;&#13;
+                &lt;ElectronicMail&gt;${Order.OrdererParty.Contact.ElectronicMail}&lt;/ElectronicMail&gt;&#13;
+            &lt;/Contact&gt;&#13;
+        &lt;/OrdererParty&gt;&#13;
+        &lt;CustomerParty&gt;&#13;
+            &lt;Name&gt;${Order.CustomerParty.Name}&lt;/Name&gt;&#13;
+            &lt;PostalAddress&gt;&#13;
+                &lt;Postbox&gt;${Order.CustomerParty.PostalAddress.Postbox}&lt;/Postbox&gt;&#13;
+                &lt;StreetName&gt;${Order.CustomerParty.PostalAddress.StreetName}&lt;/StreetName&gt;&#13;
+                &lt;CityName&gt;${Order.CustomerParty.PostalAddress.CityName}&lt;/CityName&gt;&#13;
+                &lt;PostalZone&gt;${Order.CustomerParty.PostalAddress.PostalZone}&lt;/PostalZone&gt;&#13;
+            &lt;/PostalAddress&gt;&#13;
+            &lt;Contact&gt;&#13;
+                &lt;Name&gt;${Order.CustomerParty.Contact.Name}&lt;/Name&gt;&#13;
+                &lt;Telephone&gt;${Order.CustomerParty.Contact.Telephone}&lt;/Telephone&gt;&#13;
+                &lt;ElectronicMail&gt;${Order.CustomerParty.Contact.ElectronicMail}&lt;/ElectronicMail&gt;&#13;
+            &lt;/Contact&gt;&#13;
+        &lt;/CustomerParty&gt;&#13;
+        &lt;Delivery&gt;&#13;
+       ${Order.Delivery.DeliveryLocation}&#13;
+            &lt;RequestedDeliveryPeriod&gt;&#13;
+                &lt;StartDate&gt;${Order.Delivery.RequestedDeliveryPeriod.StartDate}&lt;/StartDate&gt;&#13;
+                &lt;EndDate&gt;${Order.Delivery.RequestedDeliveryPeriod.EndDate}&lt;/EndDate&gt;&#13;
+            &lt;/RequestedDeliveryPeriod&gt;&#13;
+            &lt;TechnicalContact&gt;&#13;
+                &lt;Name&gt;${Order.Delivery.TechnicalContact.Name}&lt;/Name&gt;&#13;
+                &lt;Telephone&gt;${Order.Delivery.TechnicalContact.Telephone}&lt;/Telephone&gt;&#13;
+                &lt;ElectronicMail&gt;${Order.Delivery.TechnicalContact.ElectronicMail}&lt;/ElectronicMail&gt;&#13;
+            &lt;/TechnicalContact&gt;&#13;
+        &lt;/Delivery&gt;&#13;
+      ${Order.Orderline}&#13;
+    &lt;/Order&gt;&#13;
+&lt;/Messaging&gt;</content>
+        <function_name>order</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name display_value="enersense">36b4cc031bde20501ec2dd39cd4bcbb9</protocol_name>
+        <qualified_name>Empower work order [ order ]</qualified_name>
+        <rest_endpoint>https://integrationtest.empower.eu:4443/CiniaRESTService</rest_endpoint>
+        <rest_message display_value="Empower work order">ac66635a1b81ec101ec2dd39cd4bcbf1</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-12-15 12:58:07</sys_created_on>
+        <sys_id>f6b6eb9a1b81ec101ec2dd39cd4bcbf1</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>order</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_rest_message_fn_f6b6eb9a1b81ec101ec2dd39cd4bcbf1</sys_update_name>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-04-29 13:37:58</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

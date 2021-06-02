@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="b0c4ea0c1bf610d01ec2dd39cd4bcbea" sys_domain="global" table="x_cgo_empower_work_work_order_category" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product_number</element>
+            <position>0</position>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 05:46:48</sys_created_on>
+            <sys_id>6c789e581b3a50d01ec2dd39cd4bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_work_order_category" sys_domain="global" view="Default view">b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_ui_section>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 05:46:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 05:46:48</sys_created_on>
+            <sys_id>ec789e581b3a50d01ec2dd39cd4bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_work_order_category" sys_domain="global" view="Default view">b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_ui_section>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 05:46:48</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>2</position>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 05:46:48</sys_created_on>
+            <sys_id>60789e581b3a50d01ec2dd39cd4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_work_order_category" sys_domain="global" view="Default view">b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_ui_section>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 05:46:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 05:46:48</sys_created_on>
+            <sys_id>e0789e581b3a50d01ec2dd39cd4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_work_order_category" sys_domain="global" view="Default view">b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_ui_section>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 05:46:48</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>4</position>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 05:46:48</sys_created_on>
+            <sys_id>64789e581b3a50d01ec2dd39cd4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_work_order_category" sys_domain="global" view="Default view">b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_ui_section>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 05:46:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>5</position>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 05:46:48</sys_created_on>
+            <sys_id>e4789e581b3a50d01ec2dd39cd4bcbe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_work_order_category" sys_domain="global" view="Default view">b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_ui_section>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 05:46:48</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_cgo_empower_work_work_order_category</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-18 12:02:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_cgo_empower_work_work_order_category</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_ui_section_b0c4ea0c1bf610d01ec2dd39cd4bcbea</sys_update_name>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-18 12:02:08</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>Order.OrderLine.LineItem.Item.Name</name>
+        <rest_message_function display_value="order">f6b6eb9a1b81ec101ec2dd39cd4bcbf1</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-12-15 12:58:11</sys_created_on>
+        <sys_id>16c6af9a1b81ec101ec2dd39cd4bcbb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order.OrderLine.LineItem.Item.Name</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_16c6af9a1b81ec101ec2dd39cd4bcbb8</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-12-15 12:58:11</sys_updated_on>
+        <type>string</type>
+        <value/>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</application>
+        <file_path/>
+        <instance_id>ef7b6359dbeeef802f68c59705961951</instance_id>
+        <instance_name>ciniatest</instance_name>
+        <name>sys_rest_message_fn_parameters_16c6af9a1b81ec101ec2dd39cd4bcbb8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>Order.OrderLine.LineItem.Item.Name</name><rest_message_function display_value="order">f6b6eb9a1b81ec101ec2dd39cd4bcbf1</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>ilkka.kangas@verco.fi</sys_created_by><sys_created_on>2020-12-15 12:58:11</sys_created_on><sys_id>16c6af9a1b81ec101ec2dd39cd4bcbb8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Order.OrderLine.LineItem.Item.Name</sys_name><sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package><sys_policy/><sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope><sys_update_name>sys_rest_message_fn_parameters_16c6af9a1b81ec101ec2dd39cd4bcbb8</sys_update_name><sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by><sys_updated_on>2020-12-15 12:58:11</sys_updated_on><type>string</type><value/></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>695083247</payload_hash>
+        <record_name>Order.OrderLine.LineItem.Item.Name</record_name>
+        <reverted_from/>
+        <source>3347329a1b8dac101ec2dd39cd4bcb2d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-12-15 12:58:11</sys_created_on>
+        <sys_id>9ac6af9a1b81ec101ec2dd39cd4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>176667ac9050000001</sys_recorded_at>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-12-15 12:58:11</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>92c6af9a5781ec1018607dedc19dedb9</update_guid>
+        <update_guid_history>92c6af9a5781ec1018607dedc19dedb9:695083247</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-12-15 13:02:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>ceb1a75e1da249fe9eb9cd61bf391f19</sys_id>
+        <sys_metadata>16c6af9a1b81ec101ec2dd39cd4bcbb8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Order.OrderLine.LineItem.Item.Name</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_parent display_value="order">f6b6eb9a1b81ec101ec2dd39cd4bcbf1</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_scope_delete display_value="">05cfbe2324ad4be89ee3793197c53e40</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_16c6af9a1b81ec101ec2dd39cd4bcbb8</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_16c6af9a1b81ec101ec2dd39cd4bcbb8">9ac6af9a1b81ec101ec2dd39cd4bcbb9</sys_update_version>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-12-15 13:02:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

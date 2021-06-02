@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>prices_import_01</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_cgo_empower_work_prices_import_01</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-10 14:50:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4cc03f4f1b58e4104c78dc6fbd4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>prices_import_01</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_app_module_4cc03f4f1b58e4104c78dc6fbd4bcb0e</sys_update_name>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-10 14:50:05</sys_updated_on>
+        <timeline_page/>
+        <title>prices_import_01</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</application>
+        <file_path/>
+        <instance_id>ef7b6359dbeeef802f68c59705961951</instance_id>
+        <instance_name>ciniatest</instance_name>
+        <name>sys_app_module_4cc03f4f1b58e4104c78dc6fbd4bcb0e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>prices_import_01</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_cgo_empower_work_prices_import_01</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>joni-verco</sys_created_by><sys_created_on>2020-11-10 14:50:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4cc03f4f1b58e4104c78dc6fbd4bcb0e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>prices_import_01</sys_name><sys_overrides/><sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package><sys_policy/><sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope><sys_update_name>sys_app_module_4cc03f4f1b58e4104c78dc6fbd4bcb0e</sys_update_name><sys_updated_by>joni-verco</sys_updated_by><sys_updated_on>2020-11-10 14:50:05</sys_updated_on><timeline_page/><title>prices_import_01</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>906964317</payload_hash>
+        <record_name>prices_import_01</record_name>
+        <reverted_from/>
+        <source>e64aa3811b18a8101ec2dd39cd4bcbb7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2020-11-10 14:50:05</sys_created_on>
+        <sys_id>0cc03f4f1b58e4104c78dc6fbd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175b2a2a92a0000001</sys_recorded_at>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2020-11-10 14:50:05</sys_updated_on>
+        <type>Module</type>
+        <update_guid>04c03f4f2d58e41017d4db3d5ff90910</update_guid>
+        <update_guid_history>04c03f4f2d58e41017d4db3d5ff90910:906964317</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="prices_import_01">9c3c2f9b1bd4a4101ec2dd39cd4bcb44</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-11-11 09:08:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0138a3acb1ce4536a2318bdc55097a84</sys_id>
+        <sys_metadata>4cc03f4f1b58e4104c78dc6fbd4bcb0e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>prices_import_01</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_scope_delete display_value="">05cfbe2324ad4be89ee3793197c53e40</sys_scope_delete>
+        <sys_update_name>sys_app_module_4cc03f4f1b58e4104c78dc6fbd4bcb0e</sys_update_name>
+        <sys_update_version display_value="sys_app_module_4cc03f4f1b58e4104c78dc6fbd4bcb0e">0cc03f4f1b58e4104c78dc6fbd4bcb10</sys_update_version>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-11-11 09:08:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

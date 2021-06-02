@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA AG IT Dashboard - New Tab">01ea60741bf6d8d04c78dc6fbd4bcb07</canvas_page>
+        <name>AG IT Dashboard - New Tab</name>
+        <page display_value="PA AG IT Dashboard - New Tab">81ea60741bf6d8d04c78dc6fbd4bcb06</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+        <sys_created_on>2020-08-20 11:05:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>45eaa4f41bf6d8d04c78dc6fbd4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AG IT Dashboard - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>pa_tabs_45eaa4f41bf6d8d04c78dc6fbd4bcbb0</sys_update_name>
+        <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-08-20 11:05:07</sys_updated_on>
+    </pa_tabs>
+</record_update>

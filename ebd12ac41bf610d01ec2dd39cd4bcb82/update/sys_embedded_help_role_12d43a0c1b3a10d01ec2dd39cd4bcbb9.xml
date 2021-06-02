@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_cgo_empower_work.construction_site_user" name="x_cgo_empower_work.construction_site_user">96d43a0c1b3a10d01ec2dd39cd4bcbb6</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+        <sys_created_on>2020-08-18 13:12:24</sys_created_on>
+        <sys_id>12d43a0c1b3a10d01ec2dd39cd4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>96d43a0c1b3a10d01ec2dd39cd4bcbb6</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_embedded_help_role_12d43a0c1b3a10d01ec2dd39cd4bcbb9</sys_update_name>
+        <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-08-18 13:12:24</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

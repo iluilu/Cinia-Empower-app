@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>amount</element>
+        <name>x_cgo_empower_work_m2m_construction_sites_products</name>
+        <style>background-color:red;&#13;
+font-color:red;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2021-01-19 14:18:41</sys_created_on>
+        <sys_id>5d5680711b7d20101ec2dd39cd4bcb87</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>x_cgo_empower_work_m2m_construction_sites_products</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_ui_style_5d5680711b7d20101ec2dd39cd4bcb87</sys_update_name>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-01-20 07:20:09</sys_updated_on>
+        <value/>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=5d5680711b7d20101ec2dd39cd4bcb87"/>
+</record_update>

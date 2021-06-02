@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_cgo_empower_work_work_order_category" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter table="x_cgo_empower_work_work_order_category.category">product_numberISEMPTY^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            </filter>
+            <list_id display_value="Work order category - Default view" name="x_cgo_empower_work_work_order_category" related_list="NULL" sys_domain="global" view="Default view">bbf7c8191bd8a8101ec2dd39cd4bcb83</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_cgo_empower_work_work_order_category.category</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-11-04 11:23:48</sys_created_on>
+            <sys_id>b3f7c8191bd8a8101ec2dd39cd4bcb84</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-11-04 11:23:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Work order category - Default view" name="x_cgo_empower_work_work_order_category" related_list="NULL" sys_domain="global" view="Default view">bbf7c8191bd8a8101ec2dd39cd4bcb83</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_cgo_empower_work_work_order_product.category</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-11-04 11:23:48</sys_created_on>
+            <sys_id>b7f7c8191bd8a8101ec2dd39cd4bcb84</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-11-04 11:23:48</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Work order category - Default view</calculated_name>
+            <filter/>
+            <name>x_cgo_empower_work_work_order_category</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-11-04 11:23:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bbf7c8191bd8a8101ec2dd39cd4bcb83</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Work order category - Default view</sys_name>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_ui_related_x_cgo_empower_work_work_order_category_null</sys_update_name>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-11-04 11:23:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

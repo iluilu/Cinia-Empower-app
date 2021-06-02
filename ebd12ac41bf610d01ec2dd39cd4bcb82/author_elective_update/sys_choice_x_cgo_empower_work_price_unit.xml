@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="unit" table="x_cgo_empower_work_price" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>unit</element>
+            <name>x_cgo_empower_work_price</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:39:00</sys_created_on>
+            <sys_id>003941641b3a90d01ec2dd39cd4bcbfc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>unit</sys_name>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_choice_x_cgo_empower_work_price_unit</sys_update_name>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:39:00</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>cm</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>1</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:39:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>843941e01b3a90d01ec2dd39cd4bcb9b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:40</sys_updated_on>
+            <value>cm</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>m</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>2</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:40:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>76690d641b3a90d01ec2dd39cd4bcbe2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:42</sys_updated_on>
+            <value>m</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>m2</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>3</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:40:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f69c5241b3a90d01ec2dd39cd4bcb2e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:44</sys_updated_on>
+            <value>m2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>m3</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>4</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:40:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7a7981601b3a90d01ec2dd39cd4bcba9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:45</sys_updated_on>
+            <value>m3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>kpl</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>5</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:40:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd690d641b3a90d01ec2dd39cd4bcb95</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:48</sys_updated_on>
+            <value>kpl</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>15min</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>6</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:39:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>111981641b3a90d01ec2dd39cd4bcb47</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:54</sys_updated_on>
+            <value>15min</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>h</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>7</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:39:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d6981641b3a90d01ec2dd39cd4bcb54</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:56</sys_updated_on>
+            <value>h</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>om</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>8</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:40:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fb79c5241b3a90d01ec2dd39cd4bcb2f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:58</sys_updated_on>
+            <value>om</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>pm</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>9</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:40:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd890d641b3a90d01ec2dd39cd4bcb97</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:40:58</sys_updated_on>
+            <value>pm</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

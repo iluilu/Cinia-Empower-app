@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_cgo_empower_work_m2m_construction_sites_products</name>
+        <operation display_value="add_to_list">394af8150a0a0b270096f5ac9d6bac47</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+        <sys_created_on>2020-09-15 12:53:22</sys_created_on>
+        <sys_id>580df2811b9f9c101ec2dd39cd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_cgo_empower_work_m2m_construction_sites_products</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_security_acl_580df2811b9f9c101ec2dd39cd4bcbb4</sys_update_name>
+        <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-09-15 12:53:22</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

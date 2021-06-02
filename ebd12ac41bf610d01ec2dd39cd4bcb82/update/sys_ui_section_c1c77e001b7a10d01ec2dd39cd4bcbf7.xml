@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="c1c77e001b7a10d01ec2dd39cd4bcbf7" sys_domain="global" table="x_cgo_empower_work_construction_site" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_name</element>
+            <position>0</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>00eff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>1</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>80eff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_contact_person</element>
+            <position>2</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>04eff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description_of_required_work</element>
+            <position>3</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>84eff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entrance_instructions</element>
+            <position>4</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>08eff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>88eff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_id</element>
+            <position>6</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>0ceff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>postal_code</element>
+            <position>7</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>8ceff28a1b0e24504c78dc6fbd4bcb32</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>change_task</element>
+            <position>8</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>00eff28a1b0e24504c78dc6fbd4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_order_id</element>
+            <position>9</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>80eff28a1b0e24504c78dc6fbd4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>additional_information</element>
+            <position>10</position>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-02-02 08:32:30</sys_created_on>
+            <sys_id>04eff28a1b0e24504c78dc6fbd4bcb33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_cgo_empower_work_construction_site" sys_domain="global" view="Default view">c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_ui_section>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-02-02 08:32:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_cgo_empower_work_construction_site</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-18 13:25:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_cgo_empower_work_construction_site</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_ui_section_c1c77e001b7a10d01ec2dd39cd4bcbf7</sys_update_name>
+            <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-18 13:25:09</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

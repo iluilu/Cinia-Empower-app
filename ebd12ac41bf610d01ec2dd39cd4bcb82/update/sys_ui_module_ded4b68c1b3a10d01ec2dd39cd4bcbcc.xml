@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Construction site">52d4b68c1b3a10d01ec2dd39cd4bcbca</application>
+        <filter/>
+        <name>Construction sites</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_cgo_empower_work.construction_site_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
+        <sys_created_on>2020-08-18 13:12:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ded4b68c1b3a10d01ec2dd39cd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Construction sites</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_ui_module_ded4b68c1b3a10d01ec2dd39cd4bcbcc</sys_update_name>
+        <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-08-18 13:12:25</sys_updated_on>
+        <table>x_cgo_empower_work_construction_site</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

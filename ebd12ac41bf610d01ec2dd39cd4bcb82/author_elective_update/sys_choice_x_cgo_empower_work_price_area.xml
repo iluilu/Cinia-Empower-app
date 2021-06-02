@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="area" table="x_cgo_empower_work_price" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>area</element>
+            <name>x_cgo_empower_work_price</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:41:30</sys_created_on>
+            <sys_id>a0c9c1a41b3a90d01ec2dd39cd4bcb3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>area</sys_name>
+            <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+            <sys_update_name>sys_choice_x_cgo_empower_work_price_area</sys_update_name>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:41:30</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SA1 Etelä</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>1</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:41:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>beb941a41b3a90d01ec2dd39cd4bcb88</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:42:24</sys_updated_on>
+            <value>SA1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SA2 Itä</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>2</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:41:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6cc981a41b3a90d01ec2dd39cd4bcb69</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:42:25</sys_updated_on>
+            <value>SA2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SA3 Keski</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>3</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:41:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0ad981641b3a90d01ec2dd39cd4bcb4f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:42:29</sys_updated_on>
+            <value>SA3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SA4 Pohjoinen</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>4</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:42:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7d981641b3a90d01ec2dd39cd4bcb50</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:42:29</sys_updated_on>
+            <value>SA4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SA5 Länsi</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_price</name>
+            <sequence>5</sequence>
+            <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+            <sys_created_on>2020-08-19 18:42:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d6e941a41b3a90d01ec2dd39cd4bcb5f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+            <sys_updated_on>2020-08-19 18:42:30</sys_updated_on>
+            <value>SA5</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

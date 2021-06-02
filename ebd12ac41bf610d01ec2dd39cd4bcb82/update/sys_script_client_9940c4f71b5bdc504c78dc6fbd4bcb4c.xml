@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>company</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name/>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+	if(g_form.getValue('planned_start_date') == '' || g_form.getValue('planned_end_date') == '') {
+		var ref = g_form.getReference('task', callback);
+	}
+
+	function callback(t) {
+		var ga = new GlideAjax('EmpowerWorkOrderAjax');
+		ga.addParam('sysparm_name','getTask');
+		ga.addParam('sysparm_table',t.sys_class_name);
+		ga.addParam('sysparm_sys_id',t.sys_id);
+		ga.getXML(getTaskParser);
+	}
+
+	function getTaskParser(response) {  
+		var data = response.responseXML.documentElement.getAttribute("answer").split(','); 
+//		alert(data[0]);
+//		alert(data[1]);
+		g_form.setValue('planned_start_date', data[0]);
+		g_form.setValue('planned_end_date', data[1]);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-09-23 12:13:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9940c4f71b5bdc504c78dc6fbd4bcb4c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_script_client_9940c4f71b5bdc504c78dc6fbd4bcb4c</sys_update_name>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-09-23 13:09:10</sys_updated_on>
+        <table>x_cgo_empower_work_work_order</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
