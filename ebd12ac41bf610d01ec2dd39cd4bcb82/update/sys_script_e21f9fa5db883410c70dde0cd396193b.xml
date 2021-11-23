@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -86,7 +86,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e21f9fa5db883410c70dde0cd396193b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Empower work order integration Worklog</sys_name>
         <sys_overrides/>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
@@ -94,7 +94,7 @@
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
         <sys_update_name>sys_script_e21f9fa5db883410c70dde0cd396193b</sys_update_name>
         <sys_updated_by>joni-verco</sys_updated_by>
-        <sys_updated_on>2021-09-29 11:20:21</sys_updated_on>
+        <sys_updated_on>2021-11-23 12:50:13</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
