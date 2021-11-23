@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_cgo_empower_work_work_order_category" label="Work order product" max_length="40" name="x_cgo_empower_work_work_order_product" sizeclass="195" type="collection">
+    <element extends="x_cgo_empower_work_work_order_category" label="Work order product" max_length="40" name="x_cgo_empower_work_work_order_product" sizeclass="207" type="collection">
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" dependent="category" dependent_on_field="category" label="Sub category" max_length="32" name="sub_category" reference="x_cgo_empower_work_work_order_category" reference_qual="product_numberISEMPTY^EQ" reference_qual_condition="product_numberISEMPTY^EQ" type="reference" use_dependent_field="true"/>
         <index name="index">
             <element name="sub_category"/>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_cgo_empower_work_m2m_construction_sites_products</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_cgo_empower_work_m2m_construction_sites_products">sys_created_by!=system^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="!=" or="false" value="system"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Check if SA and HR are correct</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var alue_tuote = current.price.area;
+	var hinta_tuote = current.price.price_group;
+
+	var alue_site = current.construction_site.postal_code.u_contract_area;
+	var hinta_site = current.construction_site.postal_code.u_price_group;
+
+	if(alue_tuote != alue_site || hinta_tuote != hinta_site) {
+		gs.addErrorMessage('Error when trying to add products. Please check that Area and Price group filters are correct and try again.');
+		current.setAbortAction(true);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2021-11-10 09:40:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>791692ec1b33b410a9062022b24bcb9b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Check if SA and HR are correct</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_script_791692ec1b33b410a9062022b24bcb9b</sys_update_name>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-11-17 08:15:16</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=791692ec1b33b410a9062022b24bcb9b"/>
+</record_update>

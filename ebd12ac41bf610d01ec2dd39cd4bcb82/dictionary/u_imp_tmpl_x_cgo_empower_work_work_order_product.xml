@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Cgo Empower Work Work Order Product" max_length="40" name="u_imp_tmpl_x_cgo_empower_work_work_order_product" sizeclass="0" type="collection">
+        <element attributes="import_attribute_name=Asiakkaan koodi" label="Asiakkaan koodi" max_length="40" name="u_asiakkaan_koodi" type="integer"/>
+        <element attributes="import_attribute_name=Hinta" label="Hinta" max_length="15" name="u_hinta" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=nimikkeen nimi" label="nimikkeen nimi" max_length="59" name="u_nimikkeen_nimi" type="string"/>
+        <element attributes="import_attribute_name=Product number" label="Product number" max_length="40" name="u_product_number" type="integer"/>
+    </element>
+</database>

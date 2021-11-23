@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Construction site" max_length="40" name="x_cgo_empower_work_construction_site" sizeclass="133" type="collection">
-        <element label="Additional information" max_length="40" name="additional_information" type="string"/>
-        <element label="Address" max_length="100" name="address" type="string"/>
-        <element attributes="encode_utf8=false" label="Task" max_length="32" name="change_task" reference="task" type="reference"/>
+    <element label="Construction site" max_length="40" name="x_cgo_empower_work_construction_site" sizeclass="111" type="collection">
+        <element label="Additional information" max_length="40" name="additional_information" read_only="true" type="string"/>
+        <element label="Address" max_length="100" name="address" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Task" max_length="32" name="change_task" read_only="true" reference="task" type="reference"/>
         <element label="Contract area" max_length="40" name="contract_area" type="string"/>
         <element label="Description of required work" max_length="1000" name="description_of_required_work" type="string"/>
-        <element label="Entrance instructions" max_length="1000" name="entrance_instructions" type="string"/>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false,ref_ac_columns=zip;u_contract_area;u_price_group,ref_ac_columns_search=true,ref_ac_order_by=zip,ref_auto_completer=AJAXTableCompleter" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var location = 'zip' + 'name';&#10;&#9;return 'location';  // return the calculated value&#10;&#10;})(current);" label="Postal code" mandatory="true" max_length="32" name="postal_code" reference="cmn_location" reference_qual="u_type=Empower work order^EQ" reference_qual_condition="u_type=Empower work order^EQ" type="reference"/>
+        <element label="Entrance instructions" max_length="1000" name="entrance_instructions" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false,ref_ac_columns=zip;u_contract_area;u_price_group,ref_ac_columns_search=true,ref_ac_order_by=zip,ref_auto_completer=AJAXTableCompleter" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;var location = 'zip' + 'name';&#10;&#9;return 'location';  // return the calculated value&#10;&#10;})(current);" label="Postal code" max_length="32" name="postal_code" read_only="true" reference="cmn_location" reference_qual="u_type=Empower work order^EQ" reference_qual_condition="u_type=Empower work order^EQ" type="reference"/>
         <element label="Price group" max_length="40" name="price_group" type="string"/>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Site contact person" max_length="32" name="site_contact_person" reference="sys_user" type="reference"/>
-        <element display="true" label="Site ID" max_length="40" name="site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Site contact person" max_length="200" name="site_contact_person" type="string"/>
+        <element display="true" label="Site ID" max_length="40" name="site_id" read_only="true" type="string"/>
         <element label="Site name" max_length="40" name="site_name" type="string"/>
         <element label="Technical contact person" max_length="40" name="technical_contact_person" type="string"/>
-        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Work order ID" max_length="32" name="work_order_id" reference="x_cgo_empower_work_work_order" reference_cascade_rule="delete" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Work order ID" max_length="32" name="work_order_id" read_only="true" reference="x_cgo_empower_work_work_order" reference_cascade_rule="delete" type="reference"/>
         <index name="index">
             <element name="work_order_id"/>
         </index>

@@ -15,7 +15,9 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="change_task">correlation_id=EMPOWER^EQ<item endquery="false" field="correlation_id" goto="false" newquery="false" operator="=" or="false" value="EMPOWER"/>
+        <filter_condition table="change_task">u_integratedCHANGESTOtrue^u_vendorCHANGESTO3ed1cb031b8800503e7fa64f2e4bcb04^ORu_vendor=3ed1cb031b8800503e7fa64f2e4bcb04^EQ<item endquery="false" field="u_integrated" goto="false" newquery="false" operator="CHANGESTO" or="false" value="true"/>
+            <item display_table="core_company" display_value="Empower TN Oy" endquery="false" field="u_vendor" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3ed1cb031b8800503e7fa64f2e4bcb04"/>
+            <item display_table="core_company" display_value="Empower TN Oy" endquery="false" field="u_vendor" goto="false" newquery="false" operator="=" or="true" value="3ed1cb031b8800503e7fa64f2e4bcb04"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -57,23 +59,24 @@
         "order.worktype": current.u_type.toString().toUpperCase(),
 		"order.status": current.u_work_order.status.toString(),
 		"order.persons": current.u_work_order.persons.toString(),
+		"order.endcustomercontact": current.u_work_order.customer_contact_free.toString(),
 		"order.duration": current.u_work_order.duration.toString(),
 		"order.resourceaddinfo": current.u_work_order.resource_additional_information.toString(),
 		"order.skills": current.u_work_order.skills.getDisplayValue(),
 		"order.skillsother": current.u_work_order.skills_other.toString(),
         "order.ordererparty.id": "003714653416",
-        "order.ordererparty.contact.id": current.change_request.service_offering.managed_by.sys_id.toString(),
-        "order.ordererparty.contact.name": current.change_request.service_offering.managed_by.name.toString(),
-        "order.ordererparty.contact.telephone": current.change_request.service_offering.managed_by.mobile_phone.toString(),
-        "order.ordererparty.contact.electronicmail": current.change_request.service_offering.managed_by.email.toString(),
+        "order.ordererparty.contact.id": current.u_work_order.invoicing_contact.sys_id.toString(),
+        "order.ordererparty.contact.name": current.u_work_order.invoicing_contact.name.toString(),
+        "order.ordererparty.contact.telephone": current.u_work_order.invoicing_contact.mobile_phone.toString(),
+        "order.ordererparty.contact.electronicmail": current.u_work_order.invoicing_contact.email.toString(),
         "order.customerparty.name": current.change_request.company.name.toString(),
         "order.customerparty.postaladdress.postbox": current.change_request.company.zip.toString(),
         "order.customerparty.postaladdress.streetname": current.change_request.company.street.toString(),
         "order.customerparty.postaladdress.cityname": current.change_request.company.city.toString(),
         "order.customerparty.postaladdress.postalzone": current.change_request.company.state.toString(),
-        "order.customerparty.contact.name": current.change_request.requested_by.name.toString(),
-        "order.customerparty.contact.telephone": current.change_request.requested_by.mobile_phone.toString(),
-        "order.customerparty.contact.electronicmail": current.change_request.requested_by.email.toString(),
+        "order.customerparty.contact.name": current.u_work_order.contact_person.name.toString(),
+        "order.customerparty.contact.telephone": current.u_work_order.contact_person.mobile_phone.toString(),
+        "order.customerparty.contact.electronicmail": current.u_work_order.contact_person.email.toString(),
         "order.delivery.deliverylocation": [],
         "order.delivery.requesteddeliveryperiod.startdate": convertDate(current.planned_start_date.toString()),
         "order.delivery.requesteddeliveryperiod.enddate": convertDate(current.planned_end_date.toString()),
@@ -111,6 +114,7 @@
             "<ID>" + site.site_id.toString() + "</ID>" +
             "<Description>" + site.additional_information.toString() + "</Description>" +
             "<DescriptionOfTheWork>" + site.description_of_required_work.toString() + "</DescriptionOfTheWork>" +
+			"<SiteContactPerson>" + site.site_contact_person.toString() + "</SiteContactPerson>" +
             "<Address>" + site.address.toString() + "</Address>" +
             //"<ID>" + site.change_task.location.name.toString() + "</ID>" + 
             //"<Room>243</Room>" +
@@ -188,7 +192,7 @@
     gs.info("Empower integration :: Payload: " + JSON.stringify(payload), 'EMPOWER-INTEGRATION');
 
     try {
-        var r = new sn_ws.RESTMessageV2('x_cgo_empower_work.Empower work order', 'order');
+        var r = new sn_ws.RESTMessageV2('global.Enersense Azure proxy', 'order');
         r.setStringParameterNoEscape('MessageID', payload["messageid"]);
         r.setStringParameterNoEscape('Order.ProfileID', payload["order.profileid"].toString());
         r.setStringParameterNoEscape('Order.ID', payload["order.id"]);
@@ -203,6 +207,7 @@
         r.setStringParameterNoEscape('Order.WorkType', payload["order.worktype"]);
 		r.setStringParameterNoEscape('Order.Status', payload["order.status"]);
 		r.setStringParameterNoEscape('Order.Persons', payload["order.persons"]);
+		r.setStringParameterNoEscape('Order.EndCustomerContact', payload["order.endcustomercontact"]);
 		r.setStringParameterNoEscape('Order.Duration', payload["order.duration"]);
 		r.setStringParameterNoEscape('Order.ResourceAddInfo', payload["order.resourceaddinfo"]);
 		r.setStringParameterNoEscape('Order.Skills', payload["order.skills"]);
@@ -243,6 +248,19 @@
         var response = r.executeAsync();
         var responseBody = response.getBody();
         var httpStatus = response.getStatusCode();
+		if(httpStatus == '200') { 
+			current.correlation_id = 'SUCCESS';
+			current.work_notes ='Fieldwork order has been sent to Enersense';
+			var gr = new GlideRecord("x_cgo_empower_work_work_order");
+			gr.addQuery("task", current.sys_id);
+			gr.query();
+			if (gr.next()) {
+				gr.setValue('status', '2');
+				gr.update();
+
+			}
+
+		}
         gs.info("Empower integration :: XML Payload: " + r.getRequestBody());
     }
     catch (ex) {
@@ -260,7 +278,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f33163161b81ec101ec2dd39cd4bcb50</sys_id>
-        <sys_mod_count>49</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>Empower work order integration Create</sys_name>
         <sys_overrides/>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
@@ -268,9 +286,9 @@
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
         <sys_update_name>sys_script_f33163161b81ec101ec2dd39cd4bcb50</sys_update_name>
         <sys_updated_by>joni-verco</sys_updated_by>
-        <sys_updated_on>2021-05-05 12:32:25</sys_updated_on>
+        <sys_updated_on>2021-11-16 09:30:59</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=f33163161b81ec101ec2dd39cd4bcb50"/>
 </record_update>

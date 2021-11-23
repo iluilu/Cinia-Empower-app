@@ -33,7 +33,7 @@
         <name>x_cgo_empower_work_work_order</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="Task" name="task">task</reference>
         <reference_cascade_rule/>
@@ -58,15 +58,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
         <sys_created_on>2020-09-22 07:23:02</sys_created_on>
-        <sys_id>e984b55f1b135c504c78dc6fbd4bcb83</sys_id>
+        <sys_id>ff19e728db343850c70dde0cd3961945</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Task</sys_name>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
         <sys_update_name>sys_dictionary_x_cgo_empower_work_work_order_task</sys_update_name>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-09-22 07:39:08</sys_updated_on>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-11-12 11:36:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

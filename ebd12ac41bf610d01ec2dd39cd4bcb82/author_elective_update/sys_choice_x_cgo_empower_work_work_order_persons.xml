@@ -6,7 +6,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
-            <sys_id>08f2aee61bfe5cd01ec2dd39cd4bcb17</sys_id>
+            <sys_id>4429e728db343850c70dde0cd396196b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>persons</sys_name>
             <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
@@ -25,6 +25,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>0</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -44,6 +45,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>1</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -63,6 +65,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>2</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -82,6 +85,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>3</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -101,6 +105,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>4</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -120,6 +125,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>5</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -139,6 +145,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>6</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -158,6 +165,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>7</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -177,6 +185,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_work_order</name>
             <sequence>8</sequence>
+            <synonyms/>
             <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
             <sys_created_on>2020-08-26 06:18:59</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -186,6 +195,26 @@
             <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
             <sys_updated_on>2020-08-26 06:18:59</sys_updated_on>
             <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>persons</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>0</label>
+            <language>en</language>
+            <name>x_cgo_empower_work_work_order</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>joni-verco</sys_created_by>
+            <sys_created_on>2021-11-12 11:26:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9371c9111b7b7810a9062022b24bcbf5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>joni-verco</sys_updated_by>
+            <sys_updated_on>2021-11-12 11:26:20</sys_updated_on>
+            <value>0</value>
         </sys_choice>
     </sys_choice>
 </record_update>

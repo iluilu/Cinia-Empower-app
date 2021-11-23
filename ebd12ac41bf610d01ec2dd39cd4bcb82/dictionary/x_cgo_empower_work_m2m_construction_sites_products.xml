@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Empower Work M2m Construction Sites Products" max_length="40" name="x_cgo_empower_work_m2m_construction_sites_products" sizeclass="166" type="collection">
+    <element label="Empower Work M2m Construction Sites Products" max_length="40" name="x_cgo_empower_work_m2m_construction_sites_products" sizeclass="192" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Ordered amount" mandatory="true" max_length="40" name="amount" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Billed amount" max_length="40" name="billed_amount" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Construction site" max_length="32" name="construction_site" reference="x_cgo_empower_work_construction_site" reference_cascade_rule="delete" reference_floats="true" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Billing id" max_length="40" name="correlation_id" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Item notes" max_length="1000" name="item_notes" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Item notes" max_length="1000" name="item_notes" type="journal"/>
         <element attributes="edge_encryption_enabled=true" label="Order id" max_length="40" name="order_id" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Price" max_length="32" name="price" reference="x_cgo_empower_work_price" type="reference"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Task" max_length="32" name="task" read_only="true" reference="task" type="reference"/>
-        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Total price" max_length="20" name="total_price" type="price"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Billed total" max_length="20" name="total_billed" type="price"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Ordered total" max_length="20" name="total_price" type="price"/>
         <index name="index">
             <element name="construction_site"/>
         </index>

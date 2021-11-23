@@ -42,461 +42,6 @@
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ea5f83a61bf610104c78dc6fbd4bcb94"/>
     <sys_variable_value action="delete_multiple" query="document_key=ea5f83a61bf610104c78dc6fbd4bcb94"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=ea5f83a61bf610104c78dc6fbd4bcb94^sys_idNOT IN0b3cc7561b01ec101ec2dd39cd4bcbf6,2eb01bda1b01ec101ec2dd39cd4bcbf8,a6a8057c1b975c104c78dc6fbd4bcb7a,a95e3ed21bcdac101ec2dd39cd4bcbb3,b921d31e1b01ec101ec2dd39cd4bcb7f,e55e3ed21bcdac101ec2dd39cd4bcbcc,ed5e3ed21bcdac101ec2dd39cd4bcbc8,f921d31e1b01ec101ec2dd39cd4bcb72"/>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
-        <action_type_parent/>
-        <comment/>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <order>8</order>
-        <parent_ui_id>c0797199-6055-45f8-8792-4d180dccb43c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:02:12</sys_created_on>
-        <sys_id>0b3cc7561b01ec101ec2dd39cd4bcbf6</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>2513e9cb-e99c-4d38-9374-e7911dd1ad60</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=0b3cc7561b01ec101ec2dd39cd4bcbf6"/>
-    <sys_element_mapping action="delete_multiple" query="id=0b3cc7561b01ec101ec2dd39cd4bcbf6"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>log_message</field>
-        <id>0b3cc7561b01ec101ec2dd39cd4bcbf6</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:02:12</sys_created_on>
-        <sys_id>173cc7561b01ec101ec2dd39cd4bcbf8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 11:02:12</sys_updated_on>
-        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
-        <value>Looping through products. And now is time for: {{c0797199-6055-45f8-8792-4d180dccb43c.item.sys_id}}</value>
-    </sys_element_mapping>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Construct empower integration message">606fb2561bcdac101ec2dd39cd4bcb35</action_type>
-        <action_type_parent/>
-        <comment/>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <order>1</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:21:49</sys_created_on>
-        <sys_id>2eb01bda1b01ec101ec2dd39cd4bcbf8</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>330f51a0-366e-48a9-bff8-840ac8bd6c9c</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=2eb01bda1b01ec101ec2dd39cd4bcbf8"/>
-    <sys_element_mapping action="delete_multiple" query="id=2eb01bda1b01ec101ec2dd39cd4bcbf8"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>task</field>
-        <id>2eb01bda1b01ec101ec2dd39cd4bcbf8</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:23:40</sys_created_on>
-        <sys_id>ed21d31e1b01ec101ec2dd39cd4bcb66</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 11:23:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_606fb2561bcdac101ec2dd39cd4bcb35</table>
-        <value>{{Updated_1.current}}</value>
-    </sys_element_mapping>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type>
-        <action_type_parent/>
-        <comment/>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <order>2</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-09-14 09:46:36</sys_created_on>
-        <sys_id>a6a8057c1b975c104c78dc6fbd4bcb7a</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>a2525c0c-bbe5-4279-af30-3e052f95070d</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=a6a8057c1b975c104c78dc6fbd4bcb7a"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>a6a8057c1b975c104c78dc6fbd4bcb7a</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:27</sys_created_on>
-        <sys_id>1d5e3ed21bcdac101ec2dd39cd4bcbb1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:27</sys_updated_on>
-        <value>10</value>
-        <variable display_value="">cd07ee090b30030085c083eb37673a39</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>a6a8057c1b975c104c78dc6fbd4bcb7a</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-09-14 09:46:36</sys_created_on>
-        <sys_id>66a8057c1b975c104c78dc6fbd4bcb7d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:27</sys_updated_on>
-        <value>x_cgo_empower_work_construction_site</value>
-        <variable display_value="">3807ee090b30030085c083eb37673a08</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=a6a8057c1b975c104c78dc6fbd4bcb7a"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>a6a8057c1b975c104c78dc6fbd4bcb7a</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-09-14 09:46:36</sys_created_on>
-        <sys_id>2ea8057c1b975c104c78dc6fbd4bcb7c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:27</sys_updated_on>
-        <table>var__m_sys_hub_action_input_d1c56ec50b30030085c083eb37673a50</table>
-        <value>change_task={{Updated_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>max_results</field>
-        <id>a6a8057c1b975c104c78dc6fbd4bcb7a</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:27</sys_created_on>
-        <sys_id>d95e3ed21bcdac101ec2dd39cd4bcbb0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:27</sys_updated_on>
-        <table>var__m_sys_hub_action_input_d1c56ec50b30030085c083eb37673a50</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>a6a8057c1b975c104c78dc6fbd4bcb7a</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-09-14 09:46:36</sys_created_on>
-        <sys_id>e2a8057c1b975c104c78dc6fbd4bcb7d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-09-14 09:46:36</sys_updated_on>
-        <table>var__m_sys_hub_action_input_d1c56ec50b30030085c083eb37673a50</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">dd5e3ed21bcdac101ec2dd39cd4bcbb2</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>3</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:27</sys_created_on>
-        <sys_id>a95e3ed21bcdac101ec2dd39cd4bcbb3</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>3af29b12-5132-4cae-bb9e-24f0d824d14f</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=a95e3ed21bcdac101ec2dd39cd4bcbb3"/>
-    <sys_element_mapping action="delete_multiple" query="id=a95e3ed21bcdac101ec2dd39cd4bcbb3"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>items</field>
-        <id>a95e3ed21bcdac101ec2dd39cd4bcbb3</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>2d5e3ed21bcdac101ec2dd39cd4bcbb6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
-        <value>{{a2525c0c-bbe5-4279-af30-3e052f95070d.Records}}</value>
-    </sys_element_mapping>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Construct empower integration message">606fb2561bcdac101ec2dd39cd4bcb35</action_type>
-        <action_type_parent/>
-        <comment/>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <order>7</order>
-        <parent_ui_id>c0797199-6055-45f8-8792-4d180dccb43c</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:23:40</sys_created_on>
-        <sys_id>b921d31e1b01ec101ec2dd39cd4bcb7f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>2fa31035-1528-49cb-9b0c-3dd24feec305</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=b921d31e1b01ec101ec2dd39cd4bcb7f"/>
-    <sys_element_mapping action="delete_multiple" query="id=b921d31e1b01ec101ec2dd39cd4bcb7f"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>message</field>
-        <id>b921d31e1b01ec101ec2dd39cd4bcb7f</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:23:40</sys_created_on>
-        <sys_id>3121d31e1b01ec101ec2dd39cd4bcb81</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 11:23:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_606fb2561bcdac101ec2dd39cd4bcb35</table>
-        <value>{{77c11d20-3490-4e56-ab03-a3aba84b3d60.message}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>product</field>
-        <id>b921d31e1b01ec101ec2dd39cd4bcb7f</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:23:40</sys_created_on>
-        <sys_id>7d21d31e1b01ec101ec2dd39cd4bcb80</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 11:23:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_606fb2561bcdac101ec2dd39cd4bcb35</table>
-        <value>{{c0797199-6055-45f8-8792-4d180dccb43c.item}}</value>
-    </sys_element_mapping>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">215e3ed21bcdac101ec2dd39cd4bcbcc</block>
-        <comment>Loop through all products</comment>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>6</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id>3af29b12-5132-4cae-bb9e-24f0d824d14f</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>e55e3ed21bcdac101ec2dd39cd4bcbcc</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>c0797199-6055-45f8-8792-4d180dccb43c</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=e55e3ed21bcdac101ec2dd39cd4bcbcc"/>
-    <sys_element_mapping action="delete_multiple" query="id=e55e3ed21bcdac101ec2dd39cd4bcbcc"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>items</field>
-        <id>e55e3ed21bcdac101ec2dd39cd4bcbcc</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>695e3ed21bcdac101ec2dd39cd4bcbce</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
-        <value>{{d0b38f61-d37a-4bb8-8619-d75862eb65c5.Records}}</value>
-    </sys_element_mapping>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
-        <action_type_parent/>
-        <comment>Fetch all products added into construction site</comment>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <order>5</order>
-        <parent_ui_id>3af29b12-5132-4cae-bb9e-24f0d824d14f</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>ed5e3ed21bcdac101ec2dd39cd4bcbc8</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>d0b38f61-d37a-4bb8-8619-d75862eb65c5</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=ed5e3ed21bcdac101ec2dd39cd4bcbc8"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ed5e3ed21bcdac101ec2dd39cd4bcbc8</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>a95e3ed21bcdac101ec2dd39cd4bcbcb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
-        <value>x_cgo_empower_work_m2m_construction_sites_products</value>
-        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_instance</document>
-        <document_key>ed5e3ed21bcdac101ec2dd39cd4bcbc8</document_key>
-        <order>4</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>e55e3ed21bcdac101ec2dd39cd4bcbcb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
-        <value>100</value>
-        <variable display_value="">4f400a1587003300663ca1bb36cb0b61</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=ed5e3ed21bcdac101ec2dd39cd4bcbc8"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>conditions</field>
-        <id>ed5e3ed21bcdac101ec2dd39cd4bcbc8</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>a15e3ed21bcdac101ec2dd39cd4bcbcb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value>construction_site={{3af29b12-5132-4cae-bb9e-24f0d824d14f.item}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>max_results</field>
-        <id>ed5e3ed21bcdac101ec2dd39cd4bcbc8</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>ed5e3ed21bcdac101ec2dd39cd4bcbca</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>table</field>
-        <id>ed5e3ed21bcdac101ec2dd39cd4bcbc8</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 10:01:28</sys_created_on>
-        <sys_id>655e3ed21bcdac101ec2dd39cd4bcbcb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
-        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_action_instance action="INSERT_OR_UPDATE">
-        <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Construct empower integration message">606fb2561bcdac101ec2dd39cd4bcb35</action_type>
-        <action_type_parent/>
-        <comment/>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
-        <order>4</order>
-        <parent_ui_id>3af29b12-5132-4cae-bb9e-24f0d824d14f</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance</sys_class_name>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:23:40</sys_created_on>
-        <sys_id>f921d31e1b01ec101ec2dd39cd4bcb72</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 12:05:37</sys_updated_on>
-        <ui_id>77c11d20-3490-4e56-ab03-a3aba84b3d60</ui_id>
-    </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=f921d31e1b01ec101ec2dd39cd4bcb72"/>
-    <sys_element_mapping action="delete_multiple" query="id=f921d31e1b01ec101ec2dd39cd4bcb72"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>message</field>
-        <id>f921d31e1b01ec101ec2dd39cd4bcb72</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:23:40</sys_created_on>
-        <sys_id>7121d31e1b01ec101ec2dd39cd4bcb74</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 11:23:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_606fb2561bcdac101ec2dd39cd4bcb35</table>
-        <value>{{330f51a0-366e-48a9-bff8-840ac8bd6c9c.message}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>site</field>
-        <id>f921d31e1b01ec101ec2dd39cd4bcb72</id>
-        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
-        <sys_created_on>2020-12-15 11:23:40</sys_created_on>
-        <sys_id>bd21d31e1b01ec101ec2dd39cd4bcb73</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-12-15 11:23:40</sys_updated_on>
-        <table>var__m_sys_hub_action_input_606fb2561bcdac101ec2dd39cd4bcb35</table>
-        <value>{{3af29b12-5132-4cae-bb9e-24f0d824d14f.item}}</value>
-    </sys_element_mapping>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=ea5f83a61bf610104c78dc6fbd4bcb94^sys_idNOT INb00832da1b8dac101ec2dd39cd4bcb07"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -534,7 +79,7 @@
         <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
         <sys_updated_on>2020-12-15 09:33:51</sys_updated_on>
         <value>sys_class_name=change_task^u_integratedCHANGESTOtrue</value>
-        <variable display_value="">bb9adea0c31322002841b63b12d3ae67</variable>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_trigger_instance</document>
@@ -548,7 +93,7 @@
         <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
         <sys_updated_on>2020-12-15 09:33:51</sys_updated_on>
         <value>task</value>
-        <variable display_value="">1dda12e0c31322002841b63b12d3aea8</variable>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
     </sys_variable_value>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=ea5f83a61bf610104c78dc6fbd4bcb94^sys_idNOT INa65f83a61bf610104c78dc6fbd4bcb96"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -928,7 +473,7 @@
         <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
         <sys_updated_on>2020-12-15 10:01:27</sys_updated_on>
         <value>10</value>
-        <variable display_value="">cd07ee090b30030085c083eb37673a39</variable>
+        <variable display_value="Max Results">cd07ee090b30030085c083eb37673a39</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -942,7 +487,7 @@
         <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
         <sys_updated_on>2020-12-15 10:01:27</sys_updated_on>
         <value>x_cgo_empower_work_construction_site</value>
-        <variable display_value="">3807ee090b30030085c083eb37673a08</variable>
+        <variable display_value="Table">3807ee090b30030085c083eb37673a08</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a6a8057c1b975c104c78dc6fbd4bcb7a"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -1084,7 +629,7 @@
         <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
         <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
         <value>x_cgo_empower_work_m2m_construction_sites_products</value>
-        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
@@ -1098,7 +643,7 @@
         <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
         <sys_updated_on>2020-12-15 10:01:28</sys_updated_on>
         <value>100</value>
-        <variable display_value="">4f400a1587003300663ca1bb36cb0b61</variable>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=ed5e3ed21bcdac101ec2dd39cd4bcbc8"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -1198,6 +743,8 @@
         <display_text/>
         <extended_inputs/>
         <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1244,6 +791,8 @@
         <display_text/>
         <extended_inputs/>
         <flow display_value="Empower work order integration">ea5f83a61bf610104c78dc6fbd4bcb94</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
         <inputs/>
         <inputs/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -1295,7 +844,7 @@
         <sys_created_on>2020-09-14 09:44:51</sys_created_on>
         <sys_id>854809f81b975c104c78dc6fbd4bcb73</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
@@ -1318,7 +867,7 @@
         <sys_created_on>2020-09-14 09:44:51</sys_created_on>
         <sys_id>8948093c1b975c104c78dc6fbd4bcb5b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
@@ -1341,7 +890,7 @@
         <sys_created_on>2020-12-15 09:33:50</sys_created_on>
         <sys_id>fc0832da1b8dac101ec2dd39cd4bcb01</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>

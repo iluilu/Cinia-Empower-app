@@ -20,7 +20,7 @@
         <http_method>post</http_method>
         <lock>false</lock>
         <oauth2_profile/>
-        <protocol_name display_value="enersense">36b4cc031bde20501ec2dd39cd4bcbb9</protocol_name>
+        <protocol_name display_value="">36b4cc031bde20501ec2dd39cd4bcbb9</protocol_name>
         <qualified_name>Empower work order [ journal ]</qualified_name>
         <rest_endpoint>https://integrationtest.empower.eu:4443/CiniaRESTService</rest_endpoint>
         <rest_message display_value="Empower work order">ac66635a1b81ec101ec2dd39cd4bcbf1</rest_message>

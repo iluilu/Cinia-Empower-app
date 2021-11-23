@@ -3,152 +3,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
+            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">facb54201b8c4950a9062022b24bcb5b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5253970bdb5cb0901f87253cd39619fb</sys_id>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
+            <sys_id>b6cb54201b8c4950a9062022b24bcb5c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>task</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
+            <element>contact_person</element>
+            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">facb54201b8c4950a9062022b24bcb5b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5653970bdb5cb0901f87253cd39619fb</sys_id>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
+            <sys_id>3acb54201b8c4950a9062022b24bcb5c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>contact_person</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
+            <element>invoicing_contact</element>
+            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">facb54201b8c4950a9062022b24bcb5b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5a53970bdb5cb0901f87253cd39619fb</sys_id>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
+            <sys_id>bacb54201b8c4950a9062022b24bcb5c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>invoicing_additional_info</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
+            <element>persons</element>
+            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">facb54201b8c4950a9062022b24bcb5b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5e53970bdb5cb0901f87253cd39619fb</sys_id>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
+            <sys_id>3ecb54201b8c4950a9062022b24bcb5c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>skills</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
+            <element>duration</element>
+            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">facb54201b8c4950a9062022b24bcb5b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5253970bdb5cb0901f87253cd39619fc</sys_id>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
+            <sys_id>becb54201b8c4950a9062022b24bcb5c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>skills_other</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
+            <element>total_costs</element>
+            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">facb54201b8c4950a9062022b24bcb5b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5653970bdb5cb0901f87253cd39619fc</sys_id>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
+            <sys_id>32cb54201b8c4950a9062022b24bcb5d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>persons</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
+            <element>total_invoiced</element>
+            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">facb54201b8c4950a9062022b24bcb5b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5a53970bdb5cb0901f87253cd39619fc</sys_id>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
+            <sys_id>b2cb54201b8c4950a9062022b24bcb5d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>duration</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>7</position>
-            <sum>false</sum>
-            <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5e53970bdb5cb0901f87253cd39619fc</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>total_costs</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>8</position>
-            <sum>false</sum>
-            <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5253970bdb5cb0901f87253cd39619fd</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>total_invoiced</element>
-            <list_id display_value="x_cgo_empower_work_work_order" element="NULL" name="x_cgo_empower_work_work_order" parent="change_task" relationship="NULL" sys_domain="global" view="Default view">1653970bdb5cb0901f87253cd39619fa</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>9</position>
-            <sum>false</sum>
-            <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
-            <sys_id>5653970bdb5cb0901f87253cd39619fd</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -162,10 +117,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>joni-verco</sys_created_by>
-            <sys_created_on>2021-05-28 08:52:47</sys_created_on>
+            <sys_created_on>2021-11-22 11:01:29</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>1653970bdb5cb0901f87253cd39619fa</sys_id>
+            <sys_id>facb54201b8c4950a9062022b24bcb5b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_cgo_empower_work_work_order</sys_name>
             <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
@@ -173,7 +128,7 @@
             <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
             <sys_update_name>sys_ui_list_x_cgo_empower_work_work_order_change_task_null</sys_update_name>
             <sys_updated_by>joni-verco</sys_updated_by>
-            <sys_updated_on>2021-05-28 08:52:47</sys_updated_on>
+            <sys_updated_on>2021-11-22 11:01:29</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

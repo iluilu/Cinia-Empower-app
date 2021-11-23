@@ -33,12 +33,12 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>32</max_length>
         <name>x_cgo_empower_work_construction_site</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference display_value="" name="cmn_location">cmn_location</reference>
         <reference_cascade_rule/>
@@ -55,15 +55,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
         <sys_created_on>2020-08-18 13:24:04</sys_created_on>
-        <sys_id>d1473a8c1b3a10d01ec2dd39cd4bcb34</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_id>3b19a728db343850c70dde0cd39619f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Postal code</sys_name>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
         <sys_update_name>sys_dictionary_x_cgo_empower_work_construction_site_postal_code</sys_update_name>
-        <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-10-15 12:52:02</sys_updated_on>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-11-12 11:39:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

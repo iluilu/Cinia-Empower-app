@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Imp Tmpl X Cgo Empower Work Work Order Product</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_imp_tmpl_x_cgo_empower_work_work_order_product</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2021-10-11 12:34:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a55e90c31b87fc1053c8a9b3b24bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Imp Tmpl X Cgo Empower Work Work Order Product</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_app_module_a55e90c31b87fc1053c8a9b3b24bcb82</sys_update_name>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-10-11 12:34:35</sys_updated_on>
+        <timeline_page/>
+        <title>Imp Tmpl X Cgo Empower Work Work Order Product</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

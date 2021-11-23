@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition/>
+        <condition>new EnersenseLibrary().addSite(current);</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -58,7 +58,7 @@ action.setRedirectURL(site);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fd6f314c1b7928104c78dc6fbd4bcb7f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Add a new Site</sys_name>
         <sys_overrides/>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
@@ -66,7 +66,7 @@ action.setRedirectURL(site);
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
         <sys_update_name>sys_ui_action_fd6f314c1b7928104c78dc6fbd4bcb7f</sys_update_name>
         <sys_updated_by>joni-verco</sys_updated_by>
-        <sys_updated_on>2021-01-14 12:39:00</sys_updated_on>
+        <sys_updated_on>2021-11-09 13:50:54</sys_updated_on>
         <table>x_cgo_empower_work_work_order</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

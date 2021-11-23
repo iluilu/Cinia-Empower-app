@@ -9,7 +9,7 @@
         <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Total price</column_label>
+        <column_label>Ordered total</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -48,15 +48,15 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>joni.suojanen@verco.fi</sys_created_by>
         <sys_created_on>2020-08-26 06:53:45</sys_created_on>
-        <sys_id>6deaee661b329cd01ec2dd39cd4bcb65</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Total price</sys_name>
+        <sys_id>58292b28db343850c70dde0cd396192f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Ordered total</sys_name>
         <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
         <sys_policy/>
         <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
         <sys_update_name>sys_dictionary_x_cgo_empower_work_m2m_construction_sites_products_total_price</sys_update_name>
-        <sys_updated_by>joni.suojanen@verco.fi</sys_updated_by>
-        <sys_updated_on>2020-08-26 06:53:45</sys_updated_on>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-10-21 07:58:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

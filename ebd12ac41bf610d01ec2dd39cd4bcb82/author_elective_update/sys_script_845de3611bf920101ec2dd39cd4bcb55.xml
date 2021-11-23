@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sc_task">correlation_id=EMPOWER^EQ<item endquery="false" field="correlation_id" goto="false" newquery="false" operator="=" or="false" value="EMPOWER"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>OLDEmpower work order integration Create</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    function convertDate(dt) {
+        //gs.print(dt);
+        var aika = new GlideDateTime(dt);
+        var newAika = aika.getDisplayValueInternal();
+        var dateArr = newAika.split(' ');
+        var newDate = dateArr[0] + "T" + dateArr[1];
+        return newDate;
+      }
+  
+    var payload = {
+        "messageid": "",
+        "order.profileid": "Tilaus",
+		"order.id": current.number.toString(),
+		"order.projectid": current.change_request.service_offering.u_project_id.toString(),
+		"order.costcenternumber": current.change_request.service_offering.u_cost_center_number.toString(),
+		"order.issuedatetime": convertDate(current.sys_created_on.toString()),
+		"order.note": current.short_description.toString(),
+        "order.orderreference": "",
+        "order.billingreference": "",
+        "order.workingarea": current.u_working_area.toString(),
+        "order.urgent": "",
+        "order.documentreferences.document.id": "",
+        "order.documentreferences.document.name": "",
+        "order.worktype": current.u_type.toString().toUpperCase(),
+        "order.ordererparty.id": "003714653416",
+        "order.ordererparty.contact.id": current.request_item.service_offering.managed_by.sys_id.toString(),
+        "order.ordererparty.contact.name": current.request_item.service_offering.managed_by.name.toString(),
+        "order.ordererparty.contact.telephone": current.request_item.service_offering.managed_by.mobile_phone.toString(),
+        "order.ordererparty.contact.electronicmail": current.request_item.service_offering.managed_by.email.toString(),
+        "order.customerparty.name": current.request_item.company.name.toString(),
+        "order.customerparty.postaladdress.postbox": current.request_item.company.zip.toString(),
+        "order.customerparty.postaladdress.streetname": current.request_item.company.street.toString(),
+        "order.customerparty.postaladdress.cityname": current.request_item.company.city.toString(),
+        "order.customerparty.postaladdress.postalzone": current.request_item.company.state.toString(),
+        "order.customerparty.contact.name": current.request.requested_for.name.toString(),
+        "order.customerparty.contact.telephone": current.request.requested_for.mobile_phone.toString(),
+        "order.customerparty.contact.electronicmail": current.request.requested_for.email.toString(),
+        "order.delivery.deliverylocation": [],
+        "order.delivery.requesteddeliveryperiod.startdate": convertDate(current.u_planned_start.toString()),
+        "order.delivery.requesteddeliveryperiod.enddate": convertDate(current.u_planned_end.toString()),
+        "order.delivery.technicalcontact.name": current.u_technical_contact_person.name.toString(),
+        "order.delivery.technicalcontact.telephone": current.u_technical_contact_person.mobile_phone.toString(),
+        "order.delivery.technicalcontact.electronicmail": current.u_technical_contact_person.email.toString(),
+        "order.orderline": []
+    };
+    //x_cgo_empower_work_work_order
+    // Loop through construction sites
+    var site = new GlideRecord('x_cgo_empower_work_construction_site');
+    site.addQuery('work_order_id', current.u_work_order);
+    site.query();
+    while (site.next()) {
+        // In this section mappings are done based on construction site record
+        /*
+            <DeliveryLocation>
+                <ID>11A</ID>
+                <Description>Varastopaikka 32</Description>
+                <Address>
+                  <ID>12</ID>
+                  <Room>243</Room>
+                  <StreetName>Voimantie 99</StreetName>
+                  <Directions>Kulkuohjeet</Directions>
+                  <CityName>Tampere</CityName>
+                  <PostalZone>33680</PostalZone>
+                  <LocationCoordinate>
+                    <LatitudeX>62</LatitudeX>
+                    <LongitudeY>34.002</LongitudeY>
+                  </LocationCoordinate>
+                </Address>
+              </DeliveryLocation>
+      */
+        var siteXml = "<DeliveryLocation>" +
+            "<ID>" + site.site_id.toString() + "</ID>" +
+            "<Description>" + site.additional_information.toString() + "</Description>" +
+			"<DescriptionOfTheWork>" + site.description_of_required_work.toString() + "</DescriptionOfTheWork>" +
+            "<Address>" + site.address.toString() + "</Address>" +
+            //"<ID>" + site.change_task.location.name.toString() + "</ID>" + 
+            //"<Room>243</Room>" +
+            //"<StreetName>Voimantie 99</StreetName>" + 
+			"<Directions>" + site.entrance_instructions.toString() + "</Directions>" +
+            "<CityName>" + site.postal_code.city.toString() + "</CityName>" +
+            "<PostalZone>" + site.postal_code.zip.toString() + "</PostalZone>" +
+            "<LocationCoordinate>" +
+            "<LatitudeX>" + site.postal_code.u_latitude.toString() + "</LatitudeX>" +
+            "<LongitudeY>" + site.postal_code.u_longitude.toString() + "</LongitudeY>" +
+            "</LocationCoordinate>" +
+            "</DeliveryLocation>";
+        /*var siteObj = {
+            "order.delivery.deliverylocation.id": site.site_id.toString(),
+            "order.delivery.deliverylocation.description": site.additional_information.toString(),
+            "order.delivery.deliverylocation.address.id": site.change_task.location.name.toString(),
+            "order.delivery.deliverylocation.address.room": "",
+            "order.delivery.deliverylocation.address.streetname": "",
+            "order.delivery.deliverylocation.address.directions": "",
+            "order.delivery.deliverylocation.address.cityname": "",
+            "order.delivery.deliverylocation.address.postalzone": "",
+            "order.delivery.deliverylocation.address.locationcoordinate.latitudex": "",
+            "order.delivery.deliverylocation.address.locationcoordinate.longitudey": ""
+        };*/
+        payload["order.delivery.deliverylocation"].push(siteXml);
+
+        var product = new GlideRecord("x_cgo_empower_work_m2m_construction_sites_products");
+        product.addQuery("construction_site", site.sys_id);
+        product.query();
+        while (product.next()) {
+            // In this section mappings are done based on product(s) record(s)
+            /*
+            <Note>Asennettavan laitteen takuutodistukset on toimitettava tilaajalle sovitusti.</Note>
+              <LineItem>
+                <ID>003</ID>
+                <SiteID>11A</SiteID>
+                <Quantity>2</Quantity>
+                <Item>
+                  <ID>Itemin ID</ID>
+                  <Description>PS 320683 600X60X600 HARMAA OVI</Description>
+                  <Name>PS 320683 600X60X600 HAR OVI</Name>
+                  <AdditionalInformation>Asennuksesta sovittava huoneiston omistajan kanssa</AdditionalInformation>
+                </Item>
+              </LineItem>
+            */
+            var productXml = "<OrderLine>" +
+                "<Note>" + product.task.short_description.toString() + " " + product.task.description.toString() + "</Note>" +
+                "<LineItem>" +
+                "<ID>" + product.sys_id.toString() + "</ID>" +
+                "<SiteID>" + product.construction_site.site_id.toString() + "</SiteID>" +
+                "<Quantity>" + product.amount.toString() + "</Quantity>" +
+                "<Item>" +
+                "<ID>" + product.price.work_order_product.product_number.toString() + "</ID>" +
+                "<Description>" + product.price.work_order_product.description.toString() + "</Description>" +
+                "<Name>" + product.price.work_order_product.name.toString() + "</Name>" +
+                "<AdditionalInformation>" + product.price.work_order_product.description.toString() + "</AdditionalInformation>" +
+                "</Item>" +
+                "</LineItem>" +
+                "</OrderLine>";
+
+            /*var productObj = {
+                "order.orderline.note": product.task.short_description.toString() + " " + product.task.description.toString(),
+                "order.orderline.lineitem.siteid": product.construction_site.site_id.toString(),
+                "order.orderline.lineitem.id": "",
+                "order.orderline.lineitem.quantity": "",
+                "order.orderline.lineitem.item.id": "",
+                "order.orderline.lineitem.item.description": "",
+                "order.orderline.lineitem.item.name": "",
+                "order.orderline.lineitem.item.additionalinformation": ""
+            };*/
+            payload["order.orderline"].push(productXml);
+        }
+    }
+
+    gs.info("Empower integration :: Payload: " + JSON.stringify(payload), 'EMPOWER-INTEGRATION');
+
+    try {
+        var r = new sn_ws.RESTMessageV2('x_cgo_empower_work.Empower work order', 'order');
+		r.setStringParameterNoEscape('MessageID', payload["messageid"]);
+		r.setStringParameterNoEscape('Order.ProfileID', payload["order.profileid"].toString());
+		r.setStringParameterNoEscape('Order.ID', payload["order.id"]);
+		r.setStringParameterNoEscape('Order.ProjectId', payload["order.projectid"]);
+		r.setStringParameterNoEscape('Order.CostCenterNumber', payload["order.costcenternumber"]);
+		r.setStringParameterNoEscape('Order.IssueDateTime', payload["order.issuedatetime"]);
+		r.setStringParameterNoEscape('Order.Note', payload["order.note"]);
+		r.setStringParameterNoEscape('Order.OrderReference', payload["order.orderreference"]);
+		r.setStringParameterNoEscape('Order.BillingReference', payload["order.billingreference"]);
+		r.setStringParameterNoEscape('Order.WorkingArea', payload["order.workingarea"]);
+        r.setStringParameterNoEscape('Order.Urgent', payload["order.urgent"]);
+        r.setStringParameterNoEscape('Order.WorkType', payload["order.worktype"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.ID', payload["order.ordererparty.id"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.ID', payload["order.ordererparty.contact.id"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.Name', payload["order.ordererparty.contact.name"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.Telephone', payload["order.ordererparty.contact.telephone"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.ElectronicMail', payload["order.ordererparty.contact.electronicmail"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Name', payload["order.customerparty.contact.name"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.Postbox', payload["order.customerparty.postaladdress.postbox"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.StreetName', payload["order.customerparty.postaladdress.streetname"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.CityName', payload["order.customerparty.postaladdress.cityname"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.PostalZone', payload["order.customerparty.postaladdress.postalzone"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Contact.Name', payload["order.customerparty.contact.name"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Contact.Telephone', payload["order.customerparty.contact.telephone"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Contact.ElectronicMail', payload["order.customerparty.contact.electronicmail"]);
+        r.setStringParameterNoEscape('Order.Delivery.DeliveryLocation', payload["order.delivery.deliverylocation"].join(" "));
+        r.setStringParameterNoEscape('Order.Delivery.RequestedDeliveryPeriod.StartDate', payload["order.delivery.requesteddeliveryperiod.startdate"]);
+        r.setStringParameterNoEscape('Order.Delivery.RequestedDeliveryPeriod.EndDate', payload["order.delivery.requesteddeliveryperiod.enddate"]);
+        r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.Name', payload["order.delivery.technicalcontact.name"]);
+        r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.Telephone', payload["order.delivery.technicalcontact.telephone"]);
+        r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.ElectronicMail', payload["order.delivery.technicalcontact.electronicmail"]);
+        r.setStringParameterNoEscape('Order.Orderline', payload["order.orderline"].join(" "));
+
+        //override authentication profile 
+        //authentication type ='basic'/ 'oauth2'
+        //r.setAuthenticationProfile(authentication type, profile name);
+
+        //set a MID server name if one wants to run the message on MID
+        //r.setMIDServer('MY_MID_SERVER');
+
+        //if the message is configured to communicate through ECC queue, either
+        //by setting a MID server or calling executeAsync, one needs to set skip_sensor
+        //to true. Otherwise, one may get an intermittent error that the response body is null
+        //r.setEccParameter('skip_sensor', true);
+
+        var response = r.executeAsync();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+        gs.info("Empower integration :: XML Payload: " + r.getRequestBody());
+    }
+    catch (ex) {
+        var message = ex.message;
+        gs.info("Empower integration :: REST Error: " + message, 'EMPOWER-INTEGRATION');
+
+    }
+
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2021-01-19 12:18:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>845de3611bf920101ec2dd39cd4bcb55</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>OLDEmpower work order integration Create</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_script_845de3611bf920101ec2dd39cd4bcb55</sys_update_name>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-10-22 10:07:02</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=845de3611bf920101ec2dd39cd4bcb55"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</application>
+        <file_path/>
+        <instance_id>ef7b6359dbeeef802f68c59705961951</instance_id>
+        <instance_name>ciniatest</instance_name>
+        <name>sys_script_845de3611bf920101ec2dd39cd4bcb55</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;sc_task&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="sc_task"&gt;correlation_id=EMPOWER^EQ&lt;item endquery="false" field="correlation_id" goto="false" newquery="false" operator="=" or="false" value="EMPOWER"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;OLDEmpower work order integration Create&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    function convertDate(dt) {
+        //gs.print(dt);
+        var aika = new GlideDateTime(dt);
+        var newAika = aika.getDisplayValueInternal();
+        var dateArr = newAika.split(' ');
+        var newDate = dateArr[0] + "T" + dateArr[1];
+        return newDate;
+      }
+  
+    var payload = {
+        "messageid": "",
+        "order.profileid": "Tilaus",
+		"order.id": current.number.toString(),
+		"order.projectid": current.change_request.service_offering.u_project_id.toString(),
+		"order.costcenternumber": current.change_request.service_offering.u_cost_center_number.toString(),
+		"order.issuedatetime": convertDate(current.sys_created_on.toString()),
+		"order.note": current.short_description.toString(),
+        "order.orderreference": "",
+        "order.billingreference": "",
+        "order.workingarea": current.u_working_area.toString(),
+        "order.urgent": "",
+        "order.documentreferences.document.id": "",
+        "order.documentreferences.document.name": "",
+        "order.worktype": current.u_type.toString().toUpperCase(),
+        "order.ordererparty.id": "003714653416",
+        "order.ordererparty.contact.id": current.request_item.service_offering.managed_by.sys_id.toString(),
+        "order.ordererparty.contact.name": current.request_item.service_offering.managed_by.name.toString(),
+        "order.ordererparty.contact.telephone": current.request_item.service_offering.managed_by.mobile_phone.toString(),
+        "order.ordererparty.contact.electronicmail": current.request_item.service_offering.managed_by.email.toString(),
+        "order.customerparty.name": current.request_item.company.name.toString(),
+        "order.customerparty.postaladdress.postbox": current.request_item.company.zip.toString(),
+        "order.customerparty.postaladdress.streetname": current.request_item.company.street.toString(),
+        "order.customerparty.postaladdress.cityname": current.request_item.company.city.toString(),
+        "order.customerparty.postaladdress.postalzone": current.request_item.company.state.toString(),
+        "order.customerparty.contact.name": current.request.requested_for.name.toString(),
+        "order.customerparty.contact.telephone": current.request.requested_for.mobile_phone.toString(),
+        "order.customerparty.contact.electronicmail": current.request.requested_for.email.toString(),
+        "order.delivery.deliverylocation": [],
+        "order.delivery.requesteddeliveryperiod.startdate": convertDate(current.u_planned_start.toString()),
+        "order.delivery.requesteddeliveryperiod.enddate": convertDate(current.u_planned_end.toString()),
+        "order.delivery.technicalcontact.name": current.u_technical_contact_person.name.toString(),
+        "order.delivery.technicalcontact.telephone": current.u_technical_contact_person.mobile_phone.toString(),
+        "order.delivery.technicalcontact.electronicmail": current.u_technical_contact_person.email.toString(),
+        "order.orderline": []
+    };
+    //x_cgo_empower_work_work_order
+    // Loop through construction sites
+    var site = new GlideRecord('x_cgo_empower_work_construction_site');
+    site.addQuery('work_order_id', current.u_work_order);
+    site.query();
+    while (site.next()) {
+        // In this section mappings are done based on construction site record
+        /*
+            &lt;DeliveryLocation&gt;
+                &lt;ID&gt;11A&lt;/ID&gt;
+                &lt;Description&gt;Varastopaikka 32&lt;/Description&gt;
+                &lt;Address&gt;
+                  &lt;ID&gt;12&lt;/ID&gt;
+                  &lt;Room&gt;243&lt;/Room&gt;
+                  &lt;StreetName&gt;Voimantie 99&lt;/StreetName&gt;
+                  &lt;Directions&gt;Kulkuohjeet&lt;/Directions&gt;
+                  &lt;CityName&gt;Tampere&lt;/CityName&gt;
+                  &lt;PostalZone&gt;33680&lt;/PostalZone&gt;
+                  &lt;LocationCoordinate&gt;
+                    &lt;LatitudeX&gt;62&lt;/LatitudeX&gt;
+                    &lt;LongitudeY&gt;34.002&lt;/LongitudeY&gt;
+                  &lt;/LocationCoordinate&gt;
+                &lt;/Address&gt;
+              &lt;/DeliveryLocation&gt;
+      */
+        var siteXml = "&lt;DeliveryLocation&gt;" +
+            "&lt;ID&gt;" + site.site_id.toString() + "&lt;/ID&gt;" +
+            "&lt;Description&gt;" + site.additional_information.toString() + "&lt;/Description&gt;" +
+			"&lt;DescriptionOfTheWork&gt;" + site.description_of_required_work.toString() + "&lt;/DescriptionOfTheWork&gt;" +
+            "&lt;Address&gt;" + site.address.toString() + "&lt;/Address&gt;" +
+            //"&lt;ID&gt;" + site.change_task.location.name.toString() + "&lt;/ID&gt;" + 
+            //"&lt;Room&gt;243&lt;/Room&gt;" +
+            //"&lt;StreetName&gt;Voimantie 99&lt;/StreetName&gt;" + 
+			"&lt;Directions&gt;" + site.entrance_instructions.toString() + "&lt;/Directions&gt;" +
+            "&lt;CityName&gt;" + site.postal_code.city.toString() + "&lt;/CityName&gt;" +
+            "&lt;PostalZone&gt;" + site.postal_code.zip.toString() + "&lt;/PostalZone&gt;" +
+            "&lt;LocationCoordinate&gt;" +
+            "&lt;LatitudeX&gt;" + site.postal_code.u_latitude.toString() + "&lt;/LatitudeX&gt;" +
+            "&lt;LongitudeY&gt;" + site.postal_code.u_longitude.toString() + "&lt;/LongitudeY&gt;" +
+            "&lt;/LocationCoordinate&gt;" +
+            "&lt;/DeliveryLocation&gt;";
+        /*var siteObj = {
+            "order.delivery.deliverylocation.id": site.site_id.toString(),
+            "order.delivery.deliverylocation.description": site.additional_information.toString(),
+            "order.delivery.deliverylocation.address.id": site.change_task.location.name.toString(),
+            "order.delivery.deliverylocation.address.room": "",
+            "order.delivery.deliverylocation.address.streetname": "",
+            "order.delivery.deliverylocation.address.directions": "",
+            "order.delivery.deliverylocation.address.cityname": "",
+            "order.delivery.deliverylocation.address.postalzone": "",
+            "order.delivery.deliverylocation.address.locationcoordinate.latitudex": "",
+            "order.delivery.deliverylocation.address.locationcoordinate.longitudey": ""
+        };*/
+        payload["order.delivery.deliverylocation"].push(siteXml);
+
+        var product = new GlideRecord("x_cgo_empower_work_m2m_construction_sites_products");
+        product.addQuery("construction_site", site.sys_id);
+        product.query();
+        while (product.next()) {
+            // In this section mappings are done based on product(s) record(s)
+            /*
+            &lt;Note&gt;Asennettavan laitteen takuutodistukset on toimitettava tilaajalle sovitusti.&lt;/Note&gt;
+              &lt;LineItem&gt;
+                &lt;ID&gt;003&lt;/ID&gt;
+                &lt;SiteID&gt;11A&lt;/SiteID&gt;
+                &lt;Quantity&gt;2&lt;/Quantity&gt;
+                &lt;Item&gt;
+                  &lt;ID&gt;Itemin ID&lt;/ID&gt;
+                  &lt;Description&gt;PS 320683 600X60X600 HARMAA OVI&lt;/Description&gt;
+                  &lt;Name&gt;PS 320683 600X60X600 HAR OVI&lt;/Name&gt;
+                  &lt;AdditionalInformation&gt;Asennuksesta sovittava huoneiston omistajan kanssa&lt;/AdditionalInformation&gt;
+                &lt;/Item&gt;
+              &lt;/LineItem&gt;
+            */
+            var productXml = "&lt;OrderLine&gt;" +
+                "&lt;Note&gt;" + product.task.short_description.toString() + " " + product.task.description.toString() + "&lt;/Note&gt;" +
+                "&lt;LineItem&gt;" +
+                "&lt;ID&gt;" + product.sys_id.toString() + "&lt;/ID&gt;" +
+                "&lt;SiteID&gt;" + product.construction_site.site_id.toString() + "&lt;/SiteID&gt;" +
+                "&lt;Quantity&gt;" + product.amount.toString() + "&lt;/Quantity&gt;" +
+                "&lt;Item&gt;" +
+                "&lt;ID&gt;" + product.price.work_order_product.product_number.toString() + "&lt;/ID&gt;" +
+                "&lt;Description&gt;" + product.price.work_order_product.description.toString() + "&lt;/Description&gt;" +
+                "&lt;Name&gt;" + product.price.work_order_product.name.toString() + "&lt;/Name&gt;" +
+                "&lt;AdditionalInformation&gt;" + product.price.work_order_product.description.toString() + "&lt;/AdditionalInformation&gt;" +
+                "&lt;/Item&gt;" +
+                "&lt;/LineItem&gt;" +
+                "&lt;/OrderLine&gt;";
+
+            /*var productObj = {
+                "order.orderline.note": product.task.short_description.toString() + " " + product.task.description.toString(),
+                "order.orderline.lineitem.siteid": product.construction_site.site_id.toString(),
+                "order.orderline.lineitem.id": "",
+                "order.orderline.lineitem.quantity": "",
+                "order.orderline.lineitem.item.id": "",
+                "order.orderline.lineitem.item.description": "",
+                "order.orderline.lineitem.item.name": "",
+                "order.orderline.lineitem.item.additionalinformation": ""
+            };*/
+            payload["order.orderline"].push(productXml);
+        }
+    }
+
+    gs.info("Empower integration :: Payload: " + JSON.stringify(payload), 'EMPOWER-INTEGRATION');
+
+    try {
+        var r = new sn_ws.RESTMessageV2('x_cgo_empower_work.Empower work order', 'order');
+		r.setStringParameterNoEscape('MessageID', payload["messageid"]);
+		r.setStringParameterNoEscape('Order.ProfileID', payload["order.profileid"].toString());
+		r.setStringParameterNoEscape('Order.ID', payload["order.id"]);
+		r.setStringParameterNoEscape('Order.ProjectId', payload["order.projectid"]);
+		r.setStringParameterNoEscape('Order.CostCenterNumber', payload["order.costcenternumber"]);
+		r.setStringParameterNoEscape('Order.IssueDateTime', payload["order.issuedatetime"]);
+		r.setStringParameterNoEscape('Order.Note', payload["order.note"]);
+		r.setStringParameterNoEscape('Order.OrderReference', payload["order.orderreference"]);
+		r.setStringParameterNoEscape('Order.BillingReference', payload["order.billingreference"]);
+		r.setStringParameterNoEscape('Order.WorkingArea', payload["order.workingarea"]);
+        r.setStringParameterNoEscape('Order.Urgent', payload["order.urgent"]);
+        r.setStringParameterNoEscape('Order.WorkType', payload["order.worktype"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.ID', payload["order.ordererparty.id"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.ID', payload["order.ordererparty.contact.id"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.Name', payload["order.ordererparty.contact.name"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.Telephone', payload["order.ordererparty.contact.telephone"]);
+        r.setStringParameterNoEscape('Order.OrdererParty.Contact.ElectronicMail', payload["order.ordererparty.contact.electronicmail"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Name', payload["order.customerparty.contact.name"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.Postbox', payload["order.customerparty.postaladdress.postbox"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.StreetName', payload["order.customerparty.postaladdress.streetname"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.CityName', payload["order.customerparty.postaladdress.cityname"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.PostalZone', payload["order.customerparty.postaladdress.postalzone"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Contact.Name', payload["order.customerparty.contact.name"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Contact.Telephone', payload["order.customerparty.contact.telephone"]);
+        r.setStringParameterNoEscape('Order.CustomerParty.Contact.ElectronicMail', payload["order.customerparty.contact.electronicmail"]);
+        r.setStringParameterNoEscape('Order.Delivery.DeliveryLocation', payload["order.delivery.deliverylocation"].join(" "));
+        r.setStringParameterNoEscape('Order.Delivery.RequestedDeliveryPeriod.StartDate', payload["order.delivery.requesteddeliveryperiod.startdate"]);
+        r.setStringParameterNoEscape('Order.Delivery.RequestedDeliveryPeriod.EndDate', payload["order.delivery.requesteddeliveryperiod.enddate"]);
+        r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.Name', payload["order.delivery.technicalcontact.name"]);
+        r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.Telephone', payload["order.delivery.technicalcontact.telephone"]);
+        r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.ElectronicMail', payload["order.delivery.technicalcontact.electronicmail"]);
+        r.setStringParameterNoEscape('Order.Orderline', payload["order.orderline"].join(" "));
+
+        //override authentication profile 
+        //authentication type ='basic'/ 'oauth2'
+        //r.setAuthenticationProfile(authentication type, profile name);
+
+        //set a MID server name if one wants to run the message on MID
+        //r.setMIDServer('MY_MID_SERVER');
+
+        //if the message is configured to communicate through ECC queue, either
+        //by setting a MID server or calling executeAsync, one needs to set skip_sensor
+        //to true. Otherwise, one may get an intermittent error that the response body is null
+        //r.setEccParameter('skip_sensor', true);
+
+        var response = r.executeAsync();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+        gs.info("Empower integration :: XML Payload: " + r.getRequestBody());
+    }
+    catch (ex) {
+        var message = ex.message;
+        gs.info("Empower integration :: REST Error: " + message, 'EMPOWER-INTEGRATION');
+
+    }
+
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;joni-verco&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-01-19 12:18:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;845de3611bf920101ec2dd39cd4bcb55&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;OLDEmpower work order integration Create&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Empower work order" source="x_cgo_empower_work"&gt;ebd12ac41bf610d01ec2dd39cd4bcb82&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Empower work order"&gt;ebd12ac41bf610d01ec2dd39cd4bcb82&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_845de3611bf920101ec2dd39cd4bcb55&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;joni-verco&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-10-22 10:07:02&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=845de3611bf920101ec2dd39cd4bcb55"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-40619191</payload_hash>
+        <record_name>OLDEmpower work order integration Create</record_name>
+        <reverted_from/>
+        <source>d945b595db303c50c70dde0cd3961901</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2021-10-22 10:07:02</sys_created_on>
+        <sys_id>9306e0221b17b010a9062022b24bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ca777dc1b0000001</sys_recorded_at>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-10-22 10:07:02</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>9706e0227c17b010b7bbf9738d7a2137</update_guid>
+        <update_guid_history>9706e0227c17b010b7bbf9738d7a2137:-40619191,610628ee28d3b0109e3071ee65285669:-1408727088,3d29e5fb407f20100000b896efa1afb5:-1523115728,574b72b5103f6c50a4dcba7197085082:1173593904,eddafa75143f6c5001f015395c643f53:-390650721,dc9a882db2b2a4101bd9f78e668166f5:1764861742,ddc3c0292bb2a410b4bd3377fabc7752:1628646147,ae0cb1b2b3a2a810affa12d80b6969db:-2019360317,24774911e4aa289052dff540e5cd5f9b:-1372448007,a35e53fcf8ee6490d80b8c96599c1edd:-1287797840,a796573863ae64900c955e372993c6fa:2068520121,3ae75c063b71a0100df41d8dfaf9be70:-835636647,009514ced231a0104629d9969cb0f935:-2055678887,b7ac84c67231a01042fc5a20eb5ac3ec:54220323,74dac0466a31a010b783f5cc3e7f1b84:-1339969,ed203f25daf920108ed7557b8a9321fa:-1570059965,bfff2f2598f920105768fb259461f8c3:1000464575,859d23a14df92010fecdde5fd1b2f7bc:1422730232,cc5de36145f920106a98738a3ee97c58:1000464575,b289272c9c343850b881c4d4ba57576c:1467066666</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2021-10-22 10:59:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>0e5623575f7146cc865fa56427846c10</sys_id>
+        <sys_metadata>845de3611bf920101ec2dd39cd4bcb55</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OLDEmpower work order integration Create</sys_name>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_parent display_value="Catalog Task">8e507bd51ba223003e7fa64f2e4bcb93</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_scope_delete display_value="">05cfbe2324ad4be89ee3793197c53e40</sys_scope_delete>
+        <sys_update_name>sys_script_845de3611bf920101ec2dd39cd4bcb55</sys_update_name>
+        <sys_update_version display_value="sys_script_845de3611bf920101ec2dd39cd4bcb55">9306e0221b17b010a9062022b24bcb38</sys_update_version>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-10-22 10:59:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

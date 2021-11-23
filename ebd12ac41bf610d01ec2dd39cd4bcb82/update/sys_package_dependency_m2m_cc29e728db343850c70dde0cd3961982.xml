@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">f42e2b551b2223003e7fa64f2e4bcb8b</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
+        <sys_created_on>2020-08-19 18:47:50</sys_created_on>
+        <sys_id>cc29e728db343850c70dde0cd3961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_updated_by>ilkka.kangas@verco.fi</sys_updated_by>
+        <sys_updated_on>2020-08-19 18:47:50</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

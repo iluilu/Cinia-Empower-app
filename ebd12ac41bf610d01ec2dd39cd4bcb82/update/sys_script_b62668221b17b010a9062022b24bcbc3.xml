@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sc_task">u_integratedCHANGESTOtrue^u_vendorCHANGESTO3ed1cb031b8800503e7fa64f2e4bcb04^EQ<item endquery="false" field="u_integrated" goto="false" newquery="false" operator="CHANGESTO" or="false" value="true"/>
+            <item display_table="core_company" display_value="Empower TN Oy" endquery="false" field="u_vendor" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3ed1cb031b8800503e7fa64f2e4bcb04"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Empower work order integration Create</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	function convertDate(dt) {
+          //gs.print(dt);
+          var aika = new GlideDateTime(dt);
+          var newAika = aika.getDisplayValueInternal();
+          var dateArr = newAika.split(' ');
+          var newDate = dateArr[0] + "T" + dateArr[1];
+          return newDate;
+        }
+	
+	var payload = {
+		"order": {
+			"documentreferences": {
+				"document": {}
+			},
+			"ordererparty": {
+				"contact": {}
+			},
+			"customerparty": {
+				"postaladdress": {},
+				"contact": {}
+			},
+			"delivery": {
+				"technicalcontact": {},
+				"requesteddeliveryperiod": {},
+				"deliverylocation": []
+			},
+		},
+		
+	};
+
+	payload.messageid = "";
+	payload.order.profileid = "Tilaus";
+	if(current.number) payload.order.id  =  current.number.toString();
+	if(current.service_offering.u_project_id) payload.order.projectid  =  current.service_offering.u_project_id.toString();
+	if(current.service_offering.u_cost_center_number) payload.order.costcenternumber  =  current.service_offering.u_cost_center_number.toString();
+	if(current.sys_created_on) payload.order.issuedatetime  =  convertDate(current.sys_created_on.toString());
+	if(current.short_description) payload.order.note  =  current.short_description.toString();
+	payload.order.orderreference  =  "";
+	payload.order.billingreference  =  "";
+	if(current.u_working_area) payload.order.workingarea  =  current.u_working_area.toString();
+	payload.order.urgent  =  "";
+	payload.order.documentreferences.document.id  =  "";
+	payload.order.documentreferences.document.name  =  "";
+	if(current.u_type) payload.order.worktype  =  current.u_type.toString().toUpperCase();
+	if(current.u_work_order.status) payload.order.status  =  current.u_work_order.status.toString();
+	if(current.u_work_order.persons) payload.order.persons  =  current.u_work_order.persons.toString();
+    if(current.u_work_order.customer_contact_free) payload.order.endcustomercontact  =  current.u_work_order.customer_contact_free.toString();
+	if(current.u_work_order.duration) payload.order.duration  =  current.u_work_order.duration.toString();
+	if(current.u_work_order.resource_additional_information) payload.order.resourceaddinfo  =  current.u_work_order.resource_additional_information.toString();
+	if(current.u_work_order.skills.getDisplayValue()) payload.order.skills  =  current.u_work_order.skills.getDisplayValue();
+	if(current.u_work_order.skills_other) payload.order.skillsother  =  current.u_work_order.skills_other.toString();
+	payload.order.ordererparty.id  =  "003714653416";
+	if(current.u_work_order.invoicing_contact.sys_id) payload.order.ordererparty.contact.id  =  current.u_work_order.invoicing_contact.sys_id.toString();
+	if(current.u_work_order.invoicing_contact.name) payload.order.ordererparty.contact.name  =  current.u_work_order.invoicing_contact.name.toString();
+	if(current.u_work_order.invoicing_contact.mobile_phone) payload.order.ordererparty.contact.telephone  = current.u_work_order.invoicing_contact.mobile_phone.toString();
+	if(current.u_work_order.invoicing_contact.email) payload.order.ordererparty.contact.electronicmail  = current.u_work_order.invoicing_contact.email.toString();
+	if(current.request_item.company.name) payload.order.customerparty.name  =  current.request_item.company.name.toString();
+	if(current.request_item.company.zip) payload.order.customerparty.postaladdress.postbox  =  current.request_item.company.zip.toString();
+	if(current.request_item.company.street) payload.order.customerparty.postaladdress.streetname  =  current.request_item.company.street.toString();
+	if(current.request_item.company.city) payload.order.customerparty.postaladdress.cityname  =  current.request_item.company.city.toString();
+	if(current.request_item.company.state) payload.order.customerparty.postaladdress.postalzone  =  current.request_item.company.state.toString();
+	if(current.u_work_order.contact_person.name) payload.order.customerparty.contact.name  =  current.u_work_order.contact_person.name.toString();
+	if(current.u_work_order.contact_person.mobile_phone) payload.order.customerparty.contact.telephone  =  current.u_work_order.contact_person.mobile_phone.toString();
+	if(current.u_work_order.contact_person.email) payload.order.customerparty.contact.electronicmail  =  current.u_work_order.contact_person.email.toString();
+	if(current.u_planned_start) payload.order.delivery.requesteddeliveryperiod.startdate  =  convertDate(current.u_planned_start.toString());
+	if(current.u_planned_end) payload.order.delivery.requesteddeliveryperiod.enddate  =  convertDate(current.u_planned_end.toString());
+	if(current.u_technical_contact_person.name) payload.order.delivery.technicalcontact.name  =  current.u_technical_contact_person.name.toString();
+	if(current.u_technical_contact_person.mobile_phone) payload.order.delivery.technicalcontact.telephone  =  current.u_technical_contact_person.mobile_phone.toString();
+	if(current.u_technical_contact_person.email) payload.order.delivery.technicalcontact.electronicmail  =  current.u_technical_contact_person.email.toString();
+	payload.order.orderline  =  [];
+
+    //x_cgo_empower_work_work_order
+    // Loop through construction sites
+    var site = new GlideRecord('x_cgo_empower_work_construction_site');
+    site.addQuery('work_order_id', current.u_work_order);
+    site.query();
+    while (site.next()) {
+      
+        var siteXml = "<DeliveryLocation>" +
+            "<ID>" + site.site_id.toString() + "</ID>" +
+            "<Description>" + site.additional_information.toString() + "</Description>" +
+            "<DescriptionOfTheWork>" + site.description_of_required_work.toString() + "</DescriptionOfTheWork>" +
+            "<SiteContactPerson>" + site.site_contact_person.toString() + "</SiteContactPerson>" +
+            "<Address>" + site.address.toString() + "</Address>" +
+            //"<ID>" + site.change_task.location.name.toString() + "</ID>" + 
+            //"<Room>243</Room>" +
+            //"<StreetName>Voimantie 99</StreetName>" + 
+            "<Directions>" + site.entrance_instructions.toString() + "</Directions>" +
+            "<CityName>" + site.postal_code.city.toString() + "</CityName>" +
+            "<PostalZone>" + site.postal_code.zip.toString() + "</PostalZone>" +
+            "<LocationCoordinate>" +
+            "<LatitudeX>" + site.postal_code.u_latitude.toString() + "</LatitudeX>" +
+            "<LongitudeY>" + site.postal_code.u_longitude.toString() + "</LongitudeY>" +
+            "</LocationCoordinate>" +
+            "</DeliveryLocation>";
+    
+        payload["order"]["delivery"]["deliverylocation"].push(siteXml);
+
+        var product = new GlideRecord("x_cgo_empower_work_m2m_construction_sites_products");
+        product.addQuery("construction_site", site.sys_id);
+        product.query();
+        while (product.next()) {
+     
+            var productXml = "<OrderLine>" +
+                "<Note>" + product.task.short_description.toString() + " " + product.task.description.toString() + "</Note>" +
+                "<LineItem>" +
+                "<ID>" + product.sys_id.toString() + "</ID>" +
+                "<SiteID>" + product.construction_site.site_id.toString() + "</SiteID>" +
+                "<Quantity>" + product.amount.toString() + "</Quantity>" +
+                "<Item>" +
+                "<ID>" + product.price.work_order_product.product_number.toString() + "</ID>" +
+                "<Description>" + product.price.work_order_product.description.toString() + "</Description>" +
+                "<Name>" + product.price.work_order_product.name.toString() + "</Name>" +
+                "<AdditionalInformation>" + product.price.work_order_product.description.toString() + "</AdditionalInformation>" +
+                "</Item>" +
+                "</LineItem>" +
+                "</OrderLine>";
+
+        
+            payload["order"]["orderline"].push(productXml);
+        }
+    }
+
+    gs.info("Empower integration :: Payload: " + JSON.stringify(payload), 'EMPOWER-INTEGRATION');
+
+	try {
+		var r = new sn_ws.RESTMessageV2('global.Enersense Azure proxy', 'order');
+		r.setStringParameterNoEscape('MessageID', payload.messageid);
+		r.setStringParameterNoEscape('Order.ProfileID', payload.order.profileid.toString());
+		r.setStringParameterNoEscape('Order.ID', payload.order.id);
+		r.setStringParameterNoEscape('Order.ProjectId', payload.order.projectid);
+		r.setStringParameterNoEscape('Order.CostCenterNumber', payload.order.costcenternumber);
+		r.setStringParameterNoEscape('Order.IssueDateTime', payload.order.issuedatetime);
+		r.setStringParameterNoEscape('Order.Note', payload.order.note);
+		r.setStringParameterNoEscape('Order.OrderReference', payload.order.orderreference);
+		r.setStringParameterNoEscape('Order.BillingReference', payload.order.billingreference);
+		r.setStringParameterNoEscape('Order.WorkingArea', payload.order.workingarea);
+		r.setStringParameterNoEscape('Order.Urgent', payload.order.urgent);
+		r.setStringParameterNoEscape('Order.WorkType', payload.order.worktype);
+		r.setStringParameterNoEscape('Order.Status', payload.order.status);
+		r.setStringParameterNoEscape('Order.Persons', payload.order.persons);
+        r.setStringParameterNoEscape('Order.EndCustomerContact', payload.order.endcustomercontact);
+		r.setStringParameterNoEscape('Order.Duration', payload.order.duration);
+		r.setStringParameterNoEscape('Order.ResourceAddInfo', payload.order.resourceaddinfo);
+		r.setStringParameterNoEscape('Order.Skills', payload.order.skills);
+		r.setStringParameterNoEscape('Order.SkillsOther', payload.order.skillsother);
+		r.setStringParameterNoEscape('Order.OrdererParty.ID', payload.order.ordererparty.id);
+		r.setStringParameterNoEscape('Order.OrdererParty.Contact.ID', payload.order.ordererparty.contact.id);
+		r.setStringParameterNoEscape('Order.OrdererParty.Contact.Name', payload.order.ordererparty.contact.name);
+		r.setStringParameterNoEscape('Order.OrdererParty.Contact.Telephone', payload.order.ordererparty.contact.telephone);
+		r.setStringParameterNoEscape('Order.OrdererParty.Contact.ElectronicMail', payload.order.ordererparty.contact.electronicmail);
+		r.setStringParameterNoEscape('Order.CustomerParty.Name', payload.order.customerparty.contact.name);
+		r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.Postbox', payload.order.customerparty.postaladdress.postbox);
+		r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.StreetName', payload.order.customerparty.postaladdress.streetname);
+		r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.CityName', payload.order.customerparty.postaladdress.cityname);
+		r.setStringParameterNoEscape('Order.CustomerParty.PostalAddress.PostalZone', payload.order.customerparty.postaladdress.postalzone);
+		r.setStringParameterNoEscape('Order.CustomerParty.Contact.Name', payload.order.customerparty.contact.name);
+		r.setStringParameterNoEscape('Order.CustomerParty.Contact.Telephone', payload.order.customerparty.contact.telephone);
+		r.setStringParameterNoEscape('Order.CustomerParty.Contact.ElectronicMail', payload.order.customerparty.contact.electronicmail);
+		r.setStringParameterNoEscape('Order.Delivery.DeliveryLocation', payload.order.delivery.deliverylocation.join(" "));
+		r.setStringParameterNoEscape('Order.Delivery.RequestedDeliveryPeriod.StartDate', payload.order.delivery.requesteddeliveryperiod.startdate);
+		r.setStringParameterNoEscape('Order.Delivery.RequestedDeliveryPeriod.EndDate', payload.order.delivery.requesteddeliveryperiod.enddate);
+		r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.Name', payload.order.delivery.technicalcontact.name);
+		r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.Telephone', payload.order.delivery.technicalcontact.telephone);
+		r.setStringParameterNoEscape('Order.Delivery.TechnicalContact.ElectronicMail', payload.order.delivery.technicalcontact.electronicmail);
+		r.setStringParameterNoEscape('Order.Orderline', payload.order.orderline.join(" "));
+		
+
+ 
+
+        var response = r.executeAsync();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+		if(httpStatus == '200') { 
+			current.correlation_id = 'SUCCESS';
+			current.work_notes ='Fieldwork order has been sent to Enersense';
+			var gr = new GlideRecord("x_cgo_empower_work_work_order");
+			gr.addQuery("task", current.sys_id);
+			gr.query();
+			if (gr.next()) {
+				gr.setValue('status', '2');
+				gr.update();
+
+			}
+		}
+        gs.info("Empower integration :: XML Payload: " + r.getRequestBody());
+    }
+    catch (ex) {
+        var message = ex.message;
+        gs.info("Empower integration :: REST Error: " + message, 'EMPOWER-INTEGRATION');
+
+    }
+
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>joni-verco</sys_created_by>
+        <sys_created_on>2021-10-22 10:07:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b62668221b17b010a9062022b24bcbc3</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Empower work order integration Create</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Empower work order">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_scope>
+        <sys_update_name>sys_script_b62668221b17b010a9062022b24bcbc3</sys_update_name>
+        <sys_updated_by>joni-verco</sys_updated_by>
+        <sys_updated_on>2021-11-11 13:33:59</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b62668221b17b010a9062022b24bcbc3"/>
+</record_update>

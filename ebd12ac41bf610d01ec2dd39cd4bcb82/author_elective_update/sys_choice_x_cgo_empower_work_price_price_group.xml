@@ -6,7 +6,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
             <sys_created_on>2020-08-19 18:45:27</sys_created_on>
-            <sys_id>aeaa8de41b3a90d01ec2dd39cd4bcb6f</sys_id>
+            <sys_id>c829e728db343850c70dde0cd39619e7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>price_group</sys_name>
             <sys_package display_value="Empower work order" source="x_cgo_empower_work">ebd12ac41bf610d01ec2dd39cd4bcb82</sys_package>
@@ -25,6 +25,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_price</name>
             <sequence>1</sequence>
+            <synonyms/>
             <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
             <sys_created_on>2020-08-19 18:45:27</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -44,6 +45,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_price</name>
             <sequence>2</sequence>
+            <synonyms/>
             <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
             <sys_created_on>2020-08-19 18:45:56</sys_created_on>
             <sys_domain>global</sys_domain>
@@ -63,6 +65,7 @@
             <language>en</language>
             <name>x_cgo_empower_work_price</name>
             <sequence>3</sequence>
+            <synonyms/>
             <sys_created_by>ilkka.kangas@verco.fi</sys_created_by>
             <sys_created_on>2020-08-19 18:46:08</sys_created_on>
             <sys_domain>global</sys_domain>
